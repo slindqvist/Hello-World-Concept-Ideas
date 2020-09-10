@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1c75ea59c7ecdb47ad86d48d6eca800
+guid: 52e31187aaf5dfd4fb7ecf7025101853
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -26,10 +26,18 @@ ScriptedImporter:
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
-      customRenderQueue: -1
+      customRenderQueue: 2000
       texEnvs:
+<<<<<<< Updated upstream:ConceptIdeasProject/Assets/06_Textures/BaseWood_sZXZ.sbsar.meta
+=======
+      - name: _BaseMap
+        texture: {fileID: 3229335823670793579, guid: 52e31187aaf5dfd4fb7ecf7025101853,
+          type: 3}
+        scale: {x: 2, y: 2}
+        offset: {x: 0, y: 0}
+>>>>>>> Stashed changes:ConceptIdeasProject/Assets/06_Textures/BaseWood_sZXZ 1.sbsar.meta
       - name: _BumpMap
-        texture: {fileID: 7934210405855639851, guid: d1c75ea59c7ecdb47ad86d48d6eca800,
+        texture: {fileID: 7934210405855639851, guid: 52e31187aaf5dfd4fb7ecf7025101853,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -43,7 +51,7 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _DetailNormalMap
         texture: {instanceID: 0}
-        scale: {x: 1, y: 1}
+        scale: {x: 2, y: 2}
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
@@ -191,9 +199,14 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: 8357409614185214788, guid: d1c75ea59c7ecdb47ad86d48d6eca800,
+    material: {fileID: 8357409614185214788, guid: 52e31187aaf5dfd4fb7ecf7025101853,
       type: 3}
     generatedTextures:
+<<<<<<< Updated upstream:ConceptIdeasProject/Assets/06_Textures/BaseWood_sZXZ.sbsar.meta
     - {fileID: 3229335823670793579, guid: d1c75ea59c7ecdb47ad86d48d6eca800, type: 3}
     - {fileID: 7934210405855639851, guid: d1c75ea59c7ecdb47ad86d48d6eca800, type: 3}
     - {fileID: -8921473959047197318, guid: d1c75ea59c7ecdb47ad86d48d6eca800, type: 3}
+=======
+    - {fileID: 3229335823670793579, guid: 52e31187aaf5dfd4fb7ecf7025101853, type: 3}
+    - {fileID: 7934210405855639851, guid: 52e31187aaf5dfd4fb7ecf7025101853, type: 3}
+>>>>>>> Stashed changes:ConceptIdeasProject/Assets/06_Textures/BaseWood_sZXZ 1.sbsar.meta
