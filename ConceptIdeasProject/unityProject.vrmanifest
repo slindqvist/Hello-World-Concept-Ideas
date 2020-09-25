@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.conceptideasproject.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\Cybercom\\ConceptIdeasHW\\ConceptIdeasProject\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\VR19\\LIA\\HelloWorld\\Unity Projektet\\Hello-World-Concept-Ideas\\ConceptIdeasProject\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "ConceptIdeasProject [Testing]"

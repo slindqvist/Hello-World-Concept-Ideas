@@ -2,36 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LigthRandom : MonoBehaviour
+public class ListTest : MonoBehaviour
 {
-    public List<GameObject> _lightsList = new List<GameObject>();
+    public List<GameObject> _lights = new List<GameObject>();
     private int _lightNumber;
-
     public void Start()
     {
-        Shuffle(_lightsList);
 
-        _lightsList[_lightNumber].SetActive(true);
+
+        Shuffle(_lights);
+        // _lightNumber = Random.Range(0, _lights.Count);
+        _lights[_lightNumber].SetActive(true);
+
+
     }
 
-    public void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             RandomLights();
         }
     }
-    
+
     public void RandomLights()
     {
-        for (int i = 0; i < _lightsList.Count; i--)
-        {
-            _lightsList[i].SetActive(false);
-            _lightsList.RemoveAt(i);
+        //_lightNumber = Random.Range(0, _lights.Count);
 
-            _lightsList[_lightNumber].SetActive(true);
+        for (int i = 0; i < _lights.Count; i--)
+        {
+            _lights[i].SetActive(false);
+            _lights.RemoveAt(i);
+
+            _lights[_lightNumber].SetActive(true);
         }
     }
+
     public void Shuffle<T>(IList<T> list)
     {
         System.Random random = new System.Random();
@@ -45,7 +51,6 @@ public class LigthRandom : MonoBehaviour
             list[n] = value;
         }
     }
-
-
-
 }
+
+

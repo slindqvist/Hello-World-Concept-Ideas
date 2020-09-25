@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class CubeOnRightPlace : MonoBehaviour
 {
     public UnityEvent _cubeOnRightPlace;
+    
 
     private void OnTriggerEnter(Collider other)
     {
