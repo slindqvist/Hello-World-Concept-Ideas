@@ -6,12 +6,15 @@ public class LigthRandom : MonoBehaviour
 {
     public List<GameObject> _lightsList = new List<GameObject>();
     private int _lightNumber;
+    
+    public GameObject _lastLight;
 
     public void Start()
     {
         Shuffle(_lightsList);
 
         _lightsList[_lightNumber].SetActive(true);
+        _lastLight.SetActive(false);
     }
 
     public void Update()
@@ -20,6 +23,9 @@ public class LigthRandom : MonoBehaviour
         {
             RandomLights();
         }
+
+        LastLightFinished();
+       
     }
     
     public void RandomLights()
@@ -30,8 +36,20 @@ public class LigthRandom : MonoBehaviour
             _lightsList.RemoveAt(i);
 
             _lightsList[_lightNumber].SetActive(true);
+
+           
+        }
+       
+    }
+
+    public void LastLightFinished()
+    {
+        if (_lightsList.Count == 0)
+        {
+            _lastLight.SetActive(true);
         }
     }
+
     public void Shuffle<T>(IList<T> list)
     {
         System.Random random = new System.Random();

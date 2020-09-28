@@ -3,7 +3,26 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - TestLightCube
+  - "M\xE5l01"
+  - "M\xE5l02"
+  - "M\xE5l03"
+  - "M\xE5l04"
+  - "M\xE5l05"
+  - "M\xE5l06"
+  - "M\xE5l07"
+  - "M\xE5l08"
+  - "M\xE5l09"
+  - "M\xE5l10"
+  - "M\xE5l11"
+  - "M\xE5l12"
+  - "M\xE5l13"
+  - "M\xE5l14"
+  - "M\xE5l15"
+  - "M\xE5l16"
+  - "M\xE5l17"
+  - "M\xE5lLogo"
   layers:
   - Default
   - TransparentFX

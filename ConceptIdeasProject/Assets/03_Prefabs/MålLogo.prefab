@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 710979456278417115}
   - component: {fileID: 710979456278417114}
   m_Layer: 0
-  m_Name: "M\xE5l18"
+  m_Name: "M\xE5lLogo"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
