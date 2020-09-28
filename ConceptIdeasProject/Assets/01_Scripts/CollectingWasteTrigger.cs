@@ -5,12 +5,19 @@ using UnityEngine.Events;
 
 public class CollectingWasteTrigger : MonoBehaviour
 {
-    public UnityEvent OnCollectingWasteStart;
+    public UnityEvent PlasticCollect;
+    public UnityEvent MetalCollect;
+    public UnityEvent ElectronicCollect;
 
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.name == "Waste") {
-            OnCollectingWasteStart.Invoke();
-            Debug.Log("Waste trigger entered");
+        if(other.CompareTag("Plastic")) {
+            PlasticCollect.Invoke();
+        }
+        else if (other.CompareTag("Metal")) {
+            MetalCollect.Invoke();
+        }
+        else if (other.CompareTag("Electronic")) {
+            ElectronicCollect.Invoke();
         }
     }
 }

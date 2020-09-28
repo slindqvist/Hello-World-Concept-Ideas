@@ -184,11 +184,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35049769ac5906a4898fe052fddc2d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnCollectingWasteEnd:
+  PlasticDrop:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 237852613}
         m_MethodName: PlasticDropZone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  MetalDrop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1509865171}
+        m_MethodName: MetalDropZone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ElectronicDrop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1624216152}
+        m_MethodName: ElectronicDropZone
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -610,6 +638,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939ce7857a0a9d445bcb450845fbf032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _platformManager: {fileID: 0}
+  _plasticText: {fileID: 0}
+  _metalText: {fileID: 0}
+  _electronicText: {fileID: 0}
+  _plasticCount: 0
+  _metalCount: 0
+  _electronicCount: 0
+  _score: 0
 --- !u!1 &235783385
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,8 +698,8 @@ GameObject:
   - component: {fileID: 237852616}
   - component: {fileID: 237852613}
   m_Layer: 0
-  m_Name: Waste
-  m_TagString: Untagged
+  m_Name: Plastic Waste
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1326,6 +1362,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939ce7857a0a9d445bcb450845fbf032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _platformManager: {fileID: 0}
+  _plasticText: {fileID: 0}
+  _metalText: {fileID: 0}
+  _electronicText: {fileID: 0}
+  _plasticCount: 0
+  _metalCount: 0
+  _electronicCount: 0
+  _score: 0
 --- !u!1001 &493774658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1993,20 +2037,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35049769ac5906a4898fe052fddc2d77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnCollectingWasteEnd:
+  PlasticDrop:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DropWaste
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  MetalDrop:
+    m_PersistentCalls:
+      m_Calls: []
+  ElectronicDrop:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &797542630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2216,7 +2255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _plasticBinFullTxt: {fileID: 1700574997}
   _metalBinFullTxt: {fileID: 291313030}
-  _electronicBinFullTxt: {fileID: 291313030}
+  _electronicBinFullTxt: {fileID: 142581385}
   _levelOneComplete: 0
 --- !u!1 &1071941961
 GameObject:
@@ -2662,8 +2701,8 @@ GameObject:
   - component: {fileID: 1509865169}
   - component: {fileID: 1509865171}
   m_Layer: 0
-  m_Name: Waste
-  m_TagString: Untagged
+  m_Name: Metal Waste
+  m_TagString: Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2895,7 +2934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509865168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 1.55, z: 1.56}
+  m_LocalPosition: {x: -0.8, y: 0.3, z: 4.56}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1589782328}
@@ -3166,8 +3205,8 @@ GameObject:
   - component: {fileID: 1624216150}
   - component: {fileID: 1624216152}
   m_Layer: 0
-  m_Name: Waste
-  m_TagString: Untagged
+  m_Name: Electronic Waste
+  m_TagString: Electronic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3399,7 +3438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624216149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 1.257, z: 1.708}
+  m_LocalPosition: {x: 1.2, y: 1.257, z: 4.25}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 282983818}
@@ -3515,11 +3554,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d8ecb712571bee43bc43ef958d8b0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnCollectingWasteStart:
+  PlasticCollect:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 237852613}
         m_MethodName: CollectPlasticWaste
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  MetalCollect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1509865171}
+        m_MethodName: CollectMetalWaste
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ElectronicCollect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1624216152}
+        m_MethodName: CollectElectronicWaste
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
