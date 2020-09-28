@@ -23,25 +23,18 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        while (_levelOneComplete) {
-
-        }
-
         if(_plasticManager._plasticCount == _score) {
-            _plasticBinFullTxt.text = "OK";
-            Debug.Log("Plastic bin full");
+            if (_metalManager._metalCount == _score) {
+                if (_electronicManager._electronicCount == _score) {
+                    _plasticBinFullTxt.text = "OK";
+                    _metalBinFullTxt.text = "OK";
+                    _electronicBinFullTxt.text = "OK";
+                    Debug.Log("Level 1 Complete");
+                }
+            }
         }
 
-        if (_metalManager._metalCount == _score) {
-            _metalBinFullTxt.text = "OK";
-            Debug.Log("Metal bin full");
-        }
-
-        if (_electronicManager._electronicCount == _score) {
-            _electronicBinFullTxt.text = "OK";
-            Debug.Log("Electronic bin full");
-        }
     }
 }
