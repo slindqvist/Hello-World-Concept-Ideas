@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class WasteMover : MonoBehaviour
 {
-    public Transform _floatingWaste;
+    public Transform _motor;
     public float _power = 2f;
-    public float _drag = 0.1f;
 
-    private void Start() {
-        
+    protected Rigidbody _moverRigidbody;
+    protected Quaternion _startRotation;
+
+    private void Awake() {
+        _moverRigidbody = GetComponent<Rigidbody>();
+        _startRotation = _motor.localRotation;
     }
 
-    private void Update() {
-        
+    private void FixedUpdate() {
+        Vector3 forceDirection = transform.forward;
+        int steer = 1;
+
+        _moverRigidbody.AddForceAtPosition(steer * transform.forward * _power, _motor.position);
     }
 }

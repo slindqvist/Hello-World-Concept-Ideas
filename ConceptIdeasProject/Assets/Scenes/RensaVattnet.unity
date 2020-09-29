@@ -300,6 +300,36 @@ Transform:
   m_Father: {fileID: 1458437788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &100460181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 100460182}
+  m_Layer: 0
+  m_Name: Motor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &100460182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100460181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1509865177}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128934342
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,14 +668,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939ce7857a0a9d445bcb450845fbf032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _platformManager: {fileID: 0}
-  _plasticText: {fileID: 0}
-  _metalText: {fileID: 0}
-  _electronicText: {fileID: 0}
-  _plasticCount: 0
-  _metalCount: 0
-  _electronicCount: 0
-  _score: 0
 --- !u!1 &235783385
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,8 +793,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237852606}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.196, y: 1.1230001, z: 1.6270003}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
+  m_LocalPosition: {x: 0.196, y: 1.1230001, z: 6.57}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 689483171}
@@ -782,7 +804,7 @@ Transform:
   - {fileID: 1187286580}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!114 &237852611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,7 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71db3d370557644e8db359269dff053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _floatingWaste: {fileID: 0}
+  _motor: {fileID: 1187286580}
   _power: 2
   _drag: 0.1
 --- !u!1 &260196839
@@ -1255,6 +1277,36 @@ Transform:
   m_Father: {fileID: 237852610}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &447320208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 447320209}
+  m_Layer: 0
+  m_Name: Motor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &447320209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 447320208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1624216158}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &483471582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,14 +1414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939ce7857a0a9d445bcb450845fbf032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _platformManager: {fileID: 0}
-  _plasticText: {fileID: 0}
-  _metalText: {fileID: 0}
-  _electronicText: {fileID: 0}
-  _plasticCount: 0
-  _metalCount: 0
-  _electronicCount: 0
-  _score: 0
 --- !u!1001 &493774658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2366,7 +2410,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187286580}
-  - component: {fileID: 1187286581}
   m_Layer: 0
   m_Name: Motor
   m_TagString: Untagged
@@ -2388,21 +2431,6 @@ Transform:
   m_Father: {fileID: 237852610}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1187286581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187286579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71db3d370557644e8db359269dff053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _floatingWaste: {fileID: 0}
-  _power: 2
-  _drag: 0.1
 --- !u!1 &1234527193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +2728,7 @@ GameObject:
   - component: {fileID: 1509865170}
   - component: {fileID: 1509865169}
   - component: {fileID: 1509865171}
+  - component: {fileID: 1509865178}
   m_Layer: 0
   m_Name: Metal Waste
   m_TagString: Metal
@@ -2933,17 +2962,33 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509865168}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 0.99300003, z: 1.6570001}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000041723246}
+  m_LocalPosition: {x: -0.8, y: 0.99300003, z: 6.23}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1589782328}
   - {fileID: 1361611422}
   - {fileID: 1517974760}
   - {fileID: 1234527194}
+  - {fileID: 100460182}
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+--- !u!114 &1509865178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509865168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71db3d370557644e8db359269dff053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _motor: {fileID: 100460182}
+  _power: 2
+  _drag: 0.1
 --- !u!1 &1517974759
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,6 +3249,7 @@ GameObject:
   - component: {fileID: 1624216151}
   - component: {fileID: 1624216150}
   - component: {fileID: 1624216152}
+  - component: {fileID: 1624216159}
   m_Layer: 0
   m_Name: Electronic Waste
   m_TagString: Electronic
@@ -3437,17 +3483,33 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624216149}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2, y: 1.189, z: 1.347}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 1.2, y: 1.189, z: 6.093}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 282983818}
   - {fileID: 128934343}
   - {fileID: 62373253}
   - {fileID: 269422185}
+  - {fileID: 447320209}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+--- !u!114 &1624216159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624216149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71db3d370557644e8db359269dff053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _motor: {fileID: 447320209}
+  _power: 2
+  _drag: 0.1
 --- !u!1 &1632704993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4112,7 +4174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dimension: 10
-  UVScale: 15
+  UVScale: 1
   Octaves:
   - speed: {x: 0.5, y: 0.5}
     scale: {x: 10, y: 10}
@@ -4131,7 +4193,7 @@ Transform:
   m_GameObject: {fileID: 2120239531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.05, y: 0, z: -20}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 30, y: 5, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
