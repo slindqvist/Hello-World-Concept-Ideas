@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c00c27c3a441e8a4db3fd7c6ddba55f4
+guid: 621277be95f6c604d9e75c248235e88f
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Snow
-    second: {fileID: 2100000, guid: 25e845b6497cbd048a00f66392e4df62, type: 2}
+      name: FishingNet
+    second: {fileID: 2100000, guid: 0e63f0ee3859a994fa0e6df92e72b8fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FramePole
+    second: {fileID: 2100000, guid: 7e899066b869a31458453f26d5ae4f21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlasticDetails
+    second: {fileID: 2100000, guid: 54f009a2bbe1fde4d9a74cfcedc47745, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

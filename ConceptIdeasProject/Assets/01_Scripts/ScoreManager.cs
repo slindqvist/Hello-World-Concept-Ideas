@@ -10,7 +10,8 @@ public class ScoreManager : MonoBehaviour
     private ElectronicWasteManager _electronicManager;
 
     public Text _plasticBinFullTxt, _metalBinFullTxt, _electronicBinFullTxt;
-    public bool _levelOneComplete = false;
+    public bool _firstLevelComplete = false;
+    public bool _secondLevelComplete = false;
 
     private float _score = 0f;
 
@@ -20,6 +21,9 @@ public class ScoreManager : MonoBehaviour
         _plasticManager = FindObjectOfType<PlasticWasteManager>();
         _metalManager = FindObjectOfType<MetalWasteManager>();
         _electronicManager = FindObjectOfType<ElectronicWasteManager>();
+
+        _firstLevelComplete = false;
+        _secondLevelComplete = false;
     }
 
     // Update is called once per frame
@@ -31,10 +35,22 @@ public class ScoreManager : MonoBehaviour
                     _plasticBinFullTxt.text = "OK";
                     _metalBinFullTxt.text = "OK";
                     _electronicBinFullTxt.text = "OK";
+                    _firstLevelComplete = true;
                     Debug.Log("Level 1 Complete");
                 }
             }
         }
 
+        if (_plasticManager._plasticCount == _score && !_firstLevelComplete) {
+            if (_metalManager._metalCount == _score) {
+                if (_electronicManager._electronicCount == _score) {
+                    _plasticBinFullTxt.text = "OK";
+                    _metalBinFullTxt.text = "OK";
+                    _electronicBinFullTxt.text = "OK";
+                    _secondLevelComplete = true;
+                    Debug.Log("Level 2 Complete");
+                }
+            }
+        }
     }
 }

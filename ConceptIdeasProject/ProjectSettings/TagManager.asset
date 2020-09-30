@@ -10,6 +10,7 @@ TagManager:
   - Plastic
   - Metal
   - Electronic
+  - Rod
   layers:
   - Default
   - TransparentFX

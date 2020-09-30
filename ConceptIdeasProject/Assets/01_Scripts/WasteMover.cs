@@ -5,7 +5,7 @@ using UnityEngine;
 public class WasteMover : MonoBehaviour
 {
     public Transform _motor;
-    public float _power = 2f;
+    public float _power = 1f;
 
     protected Rigidbody _moverRigidbody;
     protected Quaternion _startRotation;
