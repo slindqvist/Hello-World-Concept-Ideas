@@ -3,22 +3,7 @@ guid: 621277be95f6c604d9e75c248235e88f
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FishingNet
-    second: {fileID: 2100000, guid: 0e63f0ee3859a994fa0e6df92e72b8fb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: FramePole
-    second: {fileID: 2100000, guid: 7e899066b869a31458453f26d5ae4f21, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PlasticDetails
-    second: {fileID: 2100000, guid: 54f009a2bbe1fde4d9a74cfcedc47745, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
