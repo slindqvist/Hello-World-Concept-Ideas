@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1811865311126439624}
   - component: {fileID: 1811865311126439625}
   - component: {fileID: 1811865311126439478}
+  - component: {fileID: 8024150557443861913}
   m_Layer: 0
   m_Name: "M\xE5l06"
   m_TagString: Untagged
@@ -80,6 +81,23 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8024150557443861913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811865311126439479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dce5b2c54020f4f8dcbb3800036ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubeOnRightPlace:
+    m_PersistentCalls:
+      m_Calls: []
+  _changeToMaterial: {fileID: 0}
+  _cube06: {fileID: 0}
 --- !u!1 &1811865311865083823
 GameObject:
   m_ObjectHideFlags: 0

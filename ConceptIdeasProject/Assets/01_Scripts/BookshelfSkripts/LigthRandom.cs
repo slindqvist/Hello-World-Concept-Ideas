@@ -17,16 +17,7 @@ public class LigthRandom : MonoBehaviour
         _lastLight.SetActive(false);
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            RandomLights();
-        }
-
-        LastLightFinished();
-       
-    }
+   
     
     public void RandomLights()
     {

@@ -6,17 +6,25 @@ using UnityEngine.Events;
 public class Mål10 : MonoBehaviour
 {
     public UnityEvent _cubeOnRightPlace;
-
+    public Material _changeToMaterial;
+    public Renderer _cube10;
+    public GameObject _collider10;
 
     private void OnTriggerEnter(Collider other)
     {
-
-        if (other.tag == "Mål10")
-
-
+        if (other.gameObject.tag == "Mål10")
+        {
+            _cube10.material.color = _changeToMaterial.color;
+            _collider10.SetActive(false);
+            
             if (_cubeOnRightPlace != null)
             {
                 _cubeOnRightPlace.Invoke();
             }
+        }
     }
 }
+
+
+          
+

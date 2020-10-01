@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 2745646928649232463}
   - component: {fileID: 2745646928649232460}
   - component: {fileID: 2745646928649232461}
+  - component: {fileID: 5462196518229542922}
   m_Layer: 0
   m_Name: "M\xE5l05"
   m_TagString: Untagged
@@ -179,6 +180,23 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5462196518229542922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2745646928649232434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 991f748d289657749b15176bd78a70d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubeOnRightPlace:
+    m_PersistentCalls:
+      m_Calls: []
+  _changeToMaterial: {fileID: 0}
+  _cube05: {fileID: 0}
 --- !u!1 &2745646929216571354
 GameObject:
   m_ObjectHideFlags: 0

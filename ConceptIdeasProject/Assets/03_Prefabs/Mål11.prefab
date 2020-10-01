@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 3197152091458456403}
   - component: {fileID: 3197152091458456402}
   - component: {fileID: 3197152091458456401}
+  - component: {fileID: 4211897634539265655}
   m_Layer: 0
   m_Name: "M\xE5l11"
   m_TagString: Untagged
@@ -253,3 +254,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4211897634539265655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3197152091458456400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2078630525b7642498b3cfc5d9b11228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubeOnRightPlace:
+    m_PersistentCalls:
+      m_Calls: []
+  _changeToMaterial: {fileID: 0}
+  _cube11: {fileID: 0}

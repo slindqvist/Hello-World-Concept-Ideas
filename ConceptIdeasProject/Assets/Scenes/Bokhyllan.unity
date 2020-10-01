@@ -131,10 +131,9 @@ GameObject:
   m_Component:
   - component: {fileID: 21069781}
   - component: {fileID: 21069782}
-  - component: {fileID: 21069783}
   m_Layer: 0
   m_Name: "M\xE5l07_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l07"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,43 +165,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &21069783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21069780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 377f7aa868cad154d831ca56bab96b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &25090818
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +308,12 @@ Transform:
 --- !u!1 &57869371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4949108837908242517, guid: efe6d21eda03f63449e291625b0b6cfc,
+    type: 3}
+  m_PrefabInstance: {fileID: 4949108838663889422}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &57869372 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4949108837908242514, guid: efe6d21eda03f63449e291625b0b6cfc,
     type: 3}
   m_PrefabInstance: {fileID: 4949108838663889422}
   m_PrefabAsset: {fileID: 0}
@@ -508,6 +476,12 @@ BoxCollider:
 --- !u!1 &67103382 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4191153432592171808, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+    type: 3}
+  m_PrefabInstance: {fileID: 4191153432117154998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &67103383 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4191153432592171809, guid: 56eae8c3a3fbbfc459281567fd6ec210,
     type: 3}
   m_PrefabInstance: {fileID: 4191153432117154998}
   m_PrefabAsset: {fileID: 0}
@@ -677,10 +651,9 @@ GameObject:
   m_Component:
   - component: {fileID: 67540571}
   - component: {fileID: 67540572}
-  - component: {fileID: 67540573}
   m_Layer: 0
   m_Name: "M\xE5l09_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l09"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -712,43 +685,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &67540573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67540570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcb0022a12cc23d4fb3391829f1f8e12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &107585870
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,10 +695,9 @@ GameObject:
   m_Component:
   - component: {fileID: 107585871}
   - component: {fileID: 107585872}
-  - component: {fileID: 107585873}
   m_Layer: 0
   m_Name: "M\xE5l13_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l13"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,43 +729,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &107585873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107585870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c42a20c583b817e4faf7952b3d82e350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &136900194
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,10 +739,9 @@ GameObject:
   m_Component:
   - component: {fileID: 136900195}
   - component: {fileID: 136900196}
-  - component: {fileID: 136900197}
   m_Layer: 0
   m_Name: "M\xE5l06_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l06"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -876,43 +773,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &136900197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136900194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7dce5b2c54020f4f8dcbb3800036ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &146002441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1097,10 +957,9 @@ GameObject:
   m_Component:
   - component: {fileID: 183270185}
   - component: {fileID: 183270186}
-  - component: {fileID: 183270187}
   m_Layer: 0
   m_Name: "M\xE5l10_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l10"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1132,46 +991,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &183270187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183270184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d1aff579d1511142a5fe1cec69bdc71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &205144250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1924272899854000563, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+    type: 3}
+  m_PrefabInstance: {fileID: 1924272900170236585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &205144251 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1924272899854000562, guid: 597404d5bd2f5d64ab087305a8fd1e12,
     type: 3}
   m_PrefabInstance: {fileID: 1924272900170236585}
   m_PrefabAsset: {fileID: 0}
@@ -1337,6 +1165,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2745646928301513229}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &236139975 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2745646928649232461, guid: 65ec145b27754ea4eabe8764e854cdb5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2745646928301513229}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &236139977 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2745646928649232463, guid: 65ec145b27754ea4eabe8764e854cdb5,
@@ -1496,6 +1330,12 @@ BoxCollider:
 --- !u!1 &249711271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8173890711345003078, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8173890710410183505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &249711272 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8173890711345003081, guid: 770d39ed75649134bb6c5da82d8c7f3c,
     type: 3}
   m_PrefabInstance: {fileID: 8173890710410183505}
   m_PrefabAsset: {fileID: 0}
@@ -1665,10 +1505,9 @@ GameObject:
   m_Component:
   - component: {fileID: 312236853}
   - component: {fileID: 312236854}
-  - component: {fileID: 312236855}
   m_Layer: 0
   m_Name: "M\xE5l16_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l16"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1700,43 +1539,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &312236855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312236852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c5a866d15874744805a4aa76b90293, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &325279213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,10 +1549,9 @@ GameObject:
   m_Component:
   - component: {fileID: 325279214}
   - component: {fileID: 325279215}
-  - component: {fileID: 325279216}
   m_Layer: 0
   m_Name: "M\xE5l11_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l11"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1782,43 +1583,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &325279216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325279213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2078630525b7642498b3cfc5d9b11228, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &326240498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,10 +1685,9 @@ GameObject:
   m_Component:
   - component: {fileID: 343057554}
   - component: {fileID: 343057555}
-  - component: {fileID: 343057556}
   m_Layer: 0
   m_Name: "M\xE5l03_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l03"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1956,43 +1719,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &343057556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343057553}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93d2462f065fea44ba135d7cffc21091, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &344162668
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,10 +2005,9 @@ GameObject:
   m_Component:
   - component: {fileID: 373618474}
   - component: {fileID: 373618476}
-  - component: {fileID: 373618475}
   m_Layer: 0
   m_Name: "M\xE5l01_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l01"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2301,43 +2026,6 @@ Transform:
   m_Father: {fileID: 33241495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &373618475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373618473}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 599427657886f0f45beccd9c83ca5b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &373618476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2545,10 +2233,9 @@ GameObject:
   m_Component:
   - component: {fileID: 530226355}
   - component: {fileID: 530226356}
-  - component: {fileID: 530226357}
   m_Layer: 0
   m_Name: "M\xE5l05_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l05"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2580,43 +2267,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &530226357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530226354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 991f748d289657749b15176bd78a70d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &585544516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,10 +2277,9 @@ GameObject:
   m_Component:
   - component: {fileID: 585544517}
   - component: {fileID: 585544518}
-  - component: {fileID: 585544519}
   m_Layer: 0
   m_Name: "M\xE5l17_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l17"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2662,46 +2311,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &585544519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585544516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b643138c9fd324f82ba2ce2a7522b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &593156742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6222986500620398447, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6222986499341528231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &593156743 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6222986500620398446, guid: c6e5e1097aa477c498a7dfad4d706aa8,
     type: 3}
   m_PrefabInstance: {fileID: 6222986499341528231}
   m_PrefabAsset: {fileID: 0}
@@ -2861,6 +2479,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09999999, y: 0.09999999, z: 0.09999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &593156751 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6222986499341528231}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593156742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 599427657886f0f45beccd9c83ca5b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &598151038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,10 +2701,9 @@ GameObject:
   m_Component:
   - component: {fileID: 631456713}
   - component: {fileID: 631456714}
-  - component: {fileID: 631456715}
   m_Layer: 0
   m_Name: "M\xE5l08_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l08"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3106,43 +2735,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &631456715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631456712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fe4f7233c11e8f478e44a5113e8f5af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &681210663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,6 +3227,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 658259713650690255}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &793517886 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 658259712317598686, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+    type: 3}
+  m_PrefabInstance: {fileID: 658259713650690255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &793517888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 658259712317598684, guid: 307f1c8dc2440d94d80994b93bf6dda1,
@@ -3794,6 +3392,12 @@ BoxCollider:
 --- !u!1 &804996891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5494546987717306762, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 5494546987531028549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &804996892 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5494546987717306773, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
     type: 3}
   m_PrefabInstance: {fileID: 5494546987531028549}
   m_PrefabAsset: {fileID: 0}
@@ -3963,10 +3567,9 @@ GameObject:
   m_Component:
   - component: {fileID: 905157484}
   - component: {fileID: 905157485}
-  - component: {fileID: 905157486}
   m_Layer: 0
   m_Name: "M\xE5l04_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l04"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3998,43 +3601,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &905157486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905157483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87ee0e7560dda764ca5a5f714221f56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &928807278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,10 +3611,9 @@ GameObject:
   m_Component:
   - component: {fileID: 928807279}
   - component: {fileID: 928807280}
-  - component: {fileID: 928807281}
   m_Layer: 0
   m_Name: "M\xE5l15_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l15"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4080,43 +3645,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &928807281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928807278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa6b834c4136ac84bac16adb97063d88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4458,6 +3986,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3230160065890043022}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1167471290 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3230160065338925828, guid: db5da0ee643e30944ab13712ec166619,
+    type: 3}
+  m_PrefabInstance: {fileID: 3230160065890043022}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1167471292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3230160065338925826, guid: db5da0ee643e30944ab13712ec166619,
@@ -4617,6 +4151,12 @@ BoxCollider:
 --- !u!1 &1201399219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5297011740102381194, guid: 03c8442c8bf8a7944955c826e5a0c700,
+    type: 3}
+  m_PrefabInstance: {fileID: 5297011740063072992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1201399220 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5297011740102381195, guid: 03c8442c8bf8a7944955c826e5a0c700,
     type: 3}
   m_PrefabInstance: {fileID: 5297011740063072992}
   m_PrefabAsset: {fileID: 0}
@@ -4878,10 +4418,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1318348012}
   - component: {fileID: 1318348013}
-  - component: {fileID: 1318348014}
   m_Layer: 0
   m_Name: "M\xE5l14_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l14"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4913,43 +4452,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1318348014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318348011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e9488bb246be7f4ba9b6e1ef9597972, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1326046272
 GameObject:
   m_ObjectHideFlags: 0
@@ -5509,6 +5011,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8917628737664482962}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1476132382 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8917628738091444163, guid: 4aabaa09d36357547852f0413da45882,
+    type: 3}
+  m_PrefabInstance: {fileID: 8917628737664482962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1476132384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8917628738091444161, guid: 4aabaa09d36357547852f0413da45882,
@@ -5695,10 +5203,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1539947308}
   - component: {fileID: 1539947309}
-  - component: {fileID: 1539947310}
   m_Layer: 0
   m_Name: "M\xE5l12_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l12"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5730,46 +5237,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1539947310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539947307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51d6b9f1dc6083140aca14f6cee195b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1576627803 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 667298004992542822, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+    type: 3}
+  m_PrefabInstance: {fileID: 667298006716294280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1576627804 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 667298004992542823, guid: 6de07307ca8ab8140b39ae7a5255cc17,
     type: 3}
   m_PrefabInstance: {fileID: 667298006716294280}
   m_PrefabAsset: {fileID: 0}
@@ -5935,6 +5411,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8812747281540615257}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1699829371 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8812747281223029897, guid: d077a4c9a9df11f4793ac8afe5126d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 8812747281540615257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1699829373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8812747281223029899, guid: d077a4c9a9df11f4793ac8afe5126d94,
@@ -6097,6 +5579,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3197152090185891860}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1807501756 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3197152091458456401, guid: 26607f5b71e331e43a1c132f87030aad,
+    type: 3}
+  m_PrefabInstance: {fileID: 3197152090185891860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1807501758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3197152091458456403, guid: 26607f5b71e331e43a1c132f87030aad,
@@ -6256,6 +5744,12 @@ BoxCollider:
 --- !u!1 &1819316357 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3847635934573394515, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3847635934993783432}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1819316358 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3847635934573394516, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
     type: 3}
   m_PrefabInstance: {fileID: 3847635934993783432}
   m_PrefabAsset: {fileID: 0}
@@ -6513,6 +6007,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1811865312215862089}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &2027848165 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1811865311126439478, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811865312215862089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2027848167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1811865311126439624, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
@@ -6685,10 +6185,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2119877775}
   - component: {fileID: 2119877776}
-  - component: {fileID: 2119877777}
   m_Layer: 0
   m_Name: "M\xE5l02_Collider"
-  m_TagString: Untagged
+  m_TagString: "M\xE5l02"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6720,46 +6219,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2119877777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119877774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce657440c0313eb45b15f21b40d03595, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubeOnRightPlace:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: RandomLights
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039625509}
-        m_MethodName: LastLightFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2135606038 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2821545808738692806, guid: 0b699056c6aad8946814ab976a930d26,
+    type: 3}
+  m_PrefabInstance: {fileID: 2821545809416834365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2135606039 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2821545808738692801, guid: 0b699056c6aad8946814ab976a930d26,
     type: 3}
   m_PrefabInstance: {fileID: 2821545809416834365}
   m_PrefabAsset: {fileID: 0}
@@ -6981,6 +6449,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 658259712317598686, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 658259712317598687, guid: 307f1c8dc2440d94d80994b93bf6dda1,
         type: 3}
       propertyPath: m_Name
@@ -6989,8 +6462,78 @@ PrefabInstance:
     - target: {fileID: 658259712317598687, guid: 307f1c8dc2440d94d80994b93bf6dda1,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l15"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 301c0c1c489d7f549828819f8b9cabba, type: 2}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _cube15
+      value: 
+      objectReference: {fileID: 793517886}
+    - target: {fileID: 2135758851121357866, guid: 307f1c8dc2440d94d80994b93bf6dda1,
+        type: 3}
+      propertyPath: _collider15
+      value: 
+      objectReference: {fileID: 928807278}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 307f1c8dc2440d94d80994b93bf6dda1, type: 3}
 --- !u!1001 &667298006716294280
@@ -7008,8 +6551,13 @@ PrefabInstance:
     - target: {fileID: 667298004992542822, guid: 6de07307ca8ab8140b39ae7a5255cc17,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l08"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 667298004992542823, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 667298004992542841, guid: 6de07307ca8ab8140b39ae7a5255cc17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7065,6 +6613,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 689a1251da4701844b2b3fe27d099f60, type: 2}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _cube08
+      value: 
+      objectReference: {fileID: 1576627804}
+    - target: {fileID: 888940767159093163, guid: 6de07307ca8ab8140b39ae7a5255cc17,
+        type: 3}
+      propertyPath: _collider08
+      value: 
+      objectReference: {fileID: 631456712}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6de07307ca8ab8140b39ae7a5255cc17, type: 3}
 --- !u!1001 &710979455419522506
@@ -7087,7 +6705,7 @@ PrefabInstance:
     - target: {fileID: 710979456278417112, guid: 5e3d8d3d743a8dd428c6818f205e9f15,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.695
+      value: 1.728
       objectReference: {fileID: 0}
     - target: {fileID: 710979456278417112, guid: 5e3d8d3d743a8dd428c6818f205e9f15,
         type: 3}
@@ -7097,7 +6715,7 @@ PrefabInstance:
     - target: {fileID: 710979456278417112, guid: 5e3d8d3d743a8dd428c6818f205e9f15,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.79
+      value: -0.044
       objectReference: {fileID: 0}
     - target: {fileID: 710979456278417112, guid: 5e3d8d3d743a8dd428c6818f205e9f15,
         type: 3}
@@ -7228,6 +6846,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 1811865311126439478, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 1811865311126439479, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
         type: 3}
       propertyPath: m_Name
@@ -7236,7 +6859,7 @@ PrefabInstance:
     - target: {fileID: 1811865311126439479, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l06"
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1811865311126439624, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
         type: 3}
@@ -7293,6 +6916,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 94ea109efd17db0418307436ad100212, type: 2}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _cube06
+      value: 
+      objectReference: {fileID: 2027848165}
+    - target: {fileID: 8024150557443861913, guid: 71d187f8379b6ee4db8b1bce3f6694cb,
+        type: 3}
+      propertyPath: _collider06
+      value: 
+      objectReference: {fileID: 136900194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71d187f8379b6ee4db8b1bce3f6694cb, type: 3}
 --- !u!1001 &1924272900170236585
@@ -7302,6 +6995,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 1924272899854000562, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 1924272899854000563, guid: 597404d5bd2f5d64ab087305a8fd1e12,
         type: 3}
       propertyPath: m_Name
@@ -7310,7 +7008,7 @@ PrefabInstance:
     - target: {fileID: 1924272899854000563, guid: 597404d5bd2f5d64ab087305a8fd1e12,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l17"
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1924272899854000564, guid: 597404d5bd2f5d64ab087305a8fd1e12,
         type: 3}
@@ -7367,6 +7065,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 36c919963035c9149b6ce36b7a62e4f9, type: 2}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _cube17
+      value: 
+      objectReference: {fileID: 205144251}
+    - target: {fileID: 8562664761441389703, guid: 597404d5bd2f5d64ab087305a8fd1e12,
+        type: 3}
+      propertyPath: _collider17
+      value: 
+      objectReference: {fileID: 585544516}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 597404d5bd2f5d64ab087305a8fd1e12, type: 3}
 --- !u!1001 &2745646928301513229
@@ -7384,8 +7152,13 @@ PrefabInstance:
     - target: {fileID: 2745646928649232434, guid: 65ec145b27754ea4eabe8764e854cdb5,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l05"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 2745646928649232461, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 2745646928649232463, guid: 65ec145b27754ea4eabe8764e854cdb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7441,6 +7214,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: defa5fb39f8c7224ea98949d2152bc23, type: 2}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _cube05
+      value: 
+      objectReference: {fileID: 236139975}
+    - target: {fileID: 5462196518229542922, guid: 65ec145b27754ea4eabe8764e854cdb5,
+        type: 3}
+      propertyPath: _collider05
+      value: 
+      objectReference: {fileID: 530226354}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ec145b27754ea4eabe8764e854cdb5, type: 3}
 --- !u!1001 &2821545809416834365
@@ -7450,6 +7293,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 2821545808738692801, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 2821545808738692803, guid: 0b699056c6aad8946814ab976a930d26,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7513,8 +7361,78 @@ PrefabInstance:
     - target: {fileID: 2821545808738692806, guid: 0b699056c6aad8946814ab976a930d26,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l04"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 25b98bd76f0f2f84a90866e33bfaff98, type: 2}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _cube04
+      value: 
+      objectReference: {fileID: 2135606039}
+    - target: {fileID: 7846539422027102694, guid: 0b699056c6aad8946814ab976a930d26,
+        type: 3}
+      propertyPath: _collider04
+      value: 
+      objectReference: {fileID: 905157483}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b699056c6aad8946814ab976a930d26, type: 3}
 --- !u!1001 &3197152090185891860
@@ -7532,8 +7450,13 @@ PrefabInstance:
     - target: {fileID: 3197152091458456400, guid: 26607f5b71e331e43a1c132f87030aad,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l11"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 3197152091458456401, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 3197152091458456403, guid: 26607f5b71e331e43a1c132f87030aad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7589,6 +7512,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: d266e285dd8774e42b9a58f14ed4ad5e, type: 2}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _cube11
+      value: 
+      objectReference: {fileID: 1807501756}
+    - target: {fileID: 4211897634539265655, guid: 26607f5b71e331e43a1c132f87030aad,
+        type: 3}
+      propertyPath: _collider11
+      value: 
+      objectReference: {fileID: 325279213}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26607f5b71e331e43a1c132f87030aad, type: 3}
 --- !u!1001 &3230160065890043022
@@ -7598,6 +7591,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 5b740fcbe907ee64894e5ca2fcd6c22b, type: 2}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _cube10
+      value: 
+      objectReference: {fileID: 1167471290}
+    - target: {fileID: 1774072886147368453, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: _collider10
+      value: 
+      objectReference: {fileID: 183270184}
     - target: {fileID: 3230160065338925826, guid: db5da0ee643e30944ab13712ec166619,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7653,6 +7716,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3230160065338925828, guid: db5da0ee643e30944ab13712ec166619,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 3230160065338925831, guid: db5da0ee643e30944ab13712ec166619,
         type: 3}
       propertyPath: m_Name
@@ -7661,7 +7729,7 @@ PrefabInstance:
     - target: {fileID: 3230160065338925831, guid: db5da0ee643e30944ab13712ec166619,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l10"
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db5da0ee643e30944ab13712ec166619, type: 3}
@@ -7680,8 +7748,13 @@ PrefabInstance:
     - target: {fileID: 3847635934573394515, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l07"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 3847635934573394516, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 3847635934573394518, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7737,6 +7810,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: cfc4924558ff8874ca44896c65535e2c, type: 2}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _cube07
+      value: 
+      objectReference: {fileID: 1819316358}
+    - target: {fileID: 4682612063382974642, guid: 53ab99369fd45f143aadd6ad66cdc2f8,
+        type: 3}
+      propertyPath: _collider07
+      value: 
+      objectReference: {fileID: 21069780}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ab99369fd45f143aadd6ad66cdc2f8, type: 3}
 --- !u!1001 &4191153432117154998
@@ -7754,8 +7897,13 @@ PrefabInstance:
     - target: {fileID: 4191153432592171808, guid: 56eae8c3a3fbbfc459281567fd6ec210,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l09"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 4191153432592171809, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 4191153432592171823, guid: 56eae8c3a3fbbfc459281567fd6ec210,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7811,6 +7959,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a569b6afdefd77b47aeb54d3b9aec049, type: 2}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _cube09
+      value: 
+      objectReference: {fileID: 67103383}
+    - target: {fileID: 4759334894575615735, guid: 56eae8c3a3fbbfc459281567fd6ec210,
+        type: 3}
+      propertyPath: _collider09
+      value: 
+      objectReference: {fileID: 67540570}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56eae8c3a3fbbfc459281567fd6ec210, type: 3}
 --- !u!1001 &4949108838663889422
@@ -7820,6 +8038,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: fb208dd39c00825408db0f350ff85fe2, type: 2}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _cube03
+      value: 
+      objectReference: {fileID: 57869372}
+    - target: {fileID: 2724578845871403185, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: _collider03
+      value: 
+      objectReference: {fileID: 343057553}
     - target: {fileID: 4949108837908242512, guid: efe6d21eda03f63449e291625b0b6cfc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7875,6 +8163,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4949108837908242514, guid: efe6d21eda03f63449e291625b0b6cfc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 4949108837908242517, guid: efe6d21eda03f63449e291625b0b6cfc,
         type: 3}
       propertyPath: m_Name
@@ -7883,7 +8176,7 @@ PrefabInstance:
     - target: {fileID: 4949108837908242517, guid: efe6d21eda03f63449e291625b0b6cfc,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l03"
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efe6d21eda03f63449e291625b0b6cfc, type: 3}
@@ -7894,6 +8187,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 6615f4a81fbbde74288ae5f9a8d1909f, type: 2}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _cube13
+      value: 
+      objectReference: {fileID: 1201399220}
+    - target: {fileID: 3135499653090103506, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: _collider13
+      value: 
+      objectReference: {fileID: 107585870}
     - target: {fileID: 5297011740102381194, guid: 03c8442c8bf8a7944955c826e5a0c700,
         type: 3}
       propertyPath: m_Name
@@ -7902,8 +8265,13 @@ PrefabInstance:
     - target: {fileID: 5297011740102381194, guid: 03c8442c8bf8a7944955c826e5a0c700,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l13"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 5297011740102381195, guid: 03c8442c8bf8a7944955c826e5a0c700,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 5297011740102381197, guid: 03c8442c8bf8a7944955c826e5a0c700,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7968,6 +8336,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 281b67614b8c542449c80243a5bc574c, type: 2}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _cube02
+      value: 
+      objectReference: {fileID: 804996892}
+    - target: {fileID: 1764869673041188910, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: _collider02
+      value: 
+      objectReference: {fileID: 2119877774}
     - target: {fileID: 5494546987717306762, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
         type: 3}
       propertyPath: m_Name
@@ -7976,8 +8414,13 @@ PrefabInstance:
     - target: {fileID: 5494546987717306762, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l02"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 5494546987717306773, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 5494546987717306775, guid: 647e438e45b086a4aa67fabd1d4ab7ed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8097,6 +8540,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6222986500620398446, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 6222986500620398447, guid: c6e5e1097aa477c498a7dfad4d706aa8,
         type: 3}
       propertyPath: m_Name
@@ -8105,8 +8553,123 @@ PrefabInstance:
     - target: {fileID: 6222986500620398447, guid: c6e5e1097aa477c498a7dfad4d706aa8,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l01"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: ca2179d2395e3d74a871e741037ebd8f, type: 2}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cube01
+      value: 
+      objectReference: {fileID: 593156743}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: boxCollider
+      value: 
+      objectReference: {fileID: 373618476}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 593156751}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: EnableCollider
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _boxcollider
+      value: 
+      objectReference: {fileID: 373618476}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _collider
+      value: 
+      objectReference: {fileID: 373618473}
+    - target: {fileID: 7546187119507900841, guid: c6e5e1097aa477c498a7dfad4d706aa8,
+        type: 3}
+      propertyPath: _collider01
+      value: 
+      objectReference: {fileID: 373618473}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e5e1097aa477c498a7dfad4d706aa8, type: 3}
 --- !u!1001 &8173890710410183505
@@ -8116,6 +8679,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c8103d794da6ed41bce00678bae0bfe, type: 2}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _cube14
+      value: 
+      objectReference: {fileID: 249711272}
+    - target: {fileID: 6868246517092062149, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: _collider14
+      value: 
+      objectReference: {fileID: 1318348011}
     - target: {fileID: 8173890711345003078, guid: 770d39ed75649134bb6c5da82d8c7f3c,
         type: 3}
       propertyPath: m_Name
@@ -8124,8 +8757,13 @@ PrefabInstance:
     - target: {fileID: 8173890711345003078, guid: 770d39ed75649134bb6c5da82d8c7f3c,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l14"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 8173890711345003081, guid: 770d39ed75649134bb6c5da82d8c7f3c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 8173890711345003083, guid: 770d39ed75649134bb6c5da82d8c7f3c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8190,6 +8828,81 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 84db0fd9504035b46a97699e834f568a, type: 2}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _cube16
+      value: 
+      objectReference: {fileID: 1699829371}
+    - target: {fileID: 1872375377697703694, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: _collider16
+      value: 
+      objectReference: {fileID: 312236852}
+    - target: {fileID: 8812747281223029897, guid: d077a4c9a9df11f4793ac8afe5126d94,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     - target: {fileID: 8812747281223029899, guid: d077a4c9a9df11f4793ac8afe5126d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8253,7 +8966,7 @@ PrefabInstance:
     - target: {fileID: 8812747281223029910, guid: d077a4c9a9df11f4793ac8afe5126d94,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l16"
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d077a4c9a9df11f4793ac8afe5126d94, type: 3}
@@ -8264,6 +8977,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784821574}
     m_Modifications:
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1039625509}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RandomLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LastLightFinished
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cubeOnRightPlace.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _changeToMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 8dd77bb3d21d8064ba48f73d6c8b97a7, type: 2}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _cube12
+      value: 
+      objectReference: {fileID: 1476132382}
+    - target: {fileID: 8363872156063126791, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: _collider12
+      value: 
+      objectReference: {fileID: 1539947307}
     - target: {fileID: 8917628738091444161, guid: 4aabaa09d36357547852f0413da45882,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8327,7 +9110,12 @@ PrefabInstance:
     - target: {fileID: 8917628738091444162, guid: 4aabaa09d36357547852f0413da45882,
         type: 3}
       propertyPath: m_TagString
-      value: "M\xE5l12"
+      value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 8917628738091444163, guid: 4aabaa09d36357547852f0413da45882,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: efb9728ef79b79d40aecc64337510fd6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aabaa09d36357547852f0413da45882, type: 3}
