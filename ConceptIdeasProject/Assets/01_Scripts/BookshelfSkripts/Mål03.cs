@@ -9,17 +9,21 @@ public class Mål03 : MonoBehaviour
     public Material _changeToMaterial;
     public Renderer _cube03;
     public GameObject _collider03;
+    public GameObject _light03;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Mål03")
+        if (_light03.activeSelf)
         {
-            _cube03.material.color = _changeToMaterial.color;
-            _collider03.SetActive(false);
-            
-            if (_cubeOnRightPlace != null)
+            if (other.gameObject.tag == "Mål03")
             {
-                _cubeOnRightPlace.Invoke();
+                _cube03.material.color = _changeToMaterial.color;
+                _collider03.SetActive(false);
+
+                if (_cubeOnRightPlace != null)
+                {
+                    _cubeOnRightPlace.Invoke();
+                }
             }
         }
     }
