@@ -1,25 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
+using UnityEngine.Animations;
 
 public class ElectronicWasteManager : MonoBehaviour
 {
-    public Text _electronicText;
+    public TextMeshProUGUI _electronicText;
     public int _electronicCount;
+
+    private Animator _electronicAnimator;
 
     //public GameObject _electronic;
     //public Transform _rod;
     //public Rigidbody _electronicRigidbody;
 
     void Start() {
+        _electronicText = GetComponentInChildren<TextMeshProUGUI>();
+        _electronicAnimator = GetComponentInChildren<Animator>();
+
         _electronicCount = 1;
 
         SetElectronicCountText();
+
+        _electronicAnimator.SetBool("IsFull", false);
     }
 
     public void SetElectronicCountText() {
         _electronicText.text = _electronicCount.ToString();
+    }
+
+    [ContextMenu("RecyclingFull")]
+    public void PlayElectronicAnim() {
+        _electronicAnimator.SetBool("IsFull", true);
+        Debug.Log("Electronic lid closed");
     }
 
     //public void CollectElectronicWaste() {
