@@ -39,7 +39,6 @@ public class PlasticWasteManager : MonoBehaviour {
     [ContextMenu("RecyclingFull")]
     public void PlayPlasticAnim() {
         _plasticAnimator.SetBool("IsFull", true);
-        Debug.Log("Plastic lid closed");
     }
 
     //public void CollectPlasticWaste() {

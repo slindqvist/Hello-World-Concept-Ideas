@@ -39,7 +39,6 @@ public class ElectronicWasteManager : MonoBehaviour
     [ContextMenu("RecyclingFull")]
     public void PlayElectronicAnim() {
         _electronicAnimator.SetBool("IsFull", true);
-        Debug.Log("Electronic lid closed");
     }
 
     //public void CollectElectronicWaste() {

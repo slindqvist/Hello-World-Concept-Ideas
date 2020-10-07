@@ -39,7 +39,6 @@ public class MetalWasteManager : MonoBehaviour
     [ContextMenu("RecyclingFull")]
     public void PlayMetalAnim() {
         _metalAnimator.SetBool("IsFull", true);
-        Debug.Log("Metal lid closed");
     }
 
     //public void CollectMetalWaste() {

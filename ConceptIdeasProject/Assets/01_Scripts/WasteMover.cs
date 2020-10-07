@@ -18,7 +18,7 @@ public class WasteMover : MonoBehaviour
         _startRotation = _motor.localRotation;
     }
 
-    private void FixedUpdate() {
+    private void Update() {
         _power = Random.Range(_minPower, _maxPower);
         Vector3 forceDirection = transform.forward;
         int steer = 1;
