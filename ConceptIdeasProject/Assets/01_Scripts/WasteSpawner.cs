@@ -4,33 +4,36 @@ using UnityEngine;
 
 public class WasteSpawner : MonoBehaviour
 {
-    public Transform[] _spawnPoints;
     public GameObject[] _wastePrefab;
+    public float _spawnTime = 10f;
+    public bool debugMode;
 
-    public float _currentSpawnTime = 0f;
-    public float _spawnInterval = 5f;
-
-    public float _countdown = 10f;
-    public float _currentTime = 0f;
+    private GameObject _spawnObject;
+    private float _spawnCounter;
 
     private void Update() {
-        _currentSpawnTime += Time.deltaTime;
-        _currentTime += Time.deltaTime;
+        if (_spawnCounter <= 0) {
+            Invoke("SpawnWaste", _spawnTime);
 
-        if(_currentSpawnTime >= _spawnInterval) {
-            SpawnWaste();
-            _currentSpawnTime = 0;
+            _spawnCounter = _spawnTime;
         }
-
-        if(_currentTime >= _countdown) {
-            _spawnInterval -= 0.1f;
-            _currentTime = 0;
+        else {
+            _spawnCounter -= Time.deltaTime;
         }
     }
 
-    private void SpawnWaste() {
-        int spawnPointIndex = Random.Range(0, _spawnPoints.Length);
-        int wastePrefabIndex = Random.Range(0, _wastePrefab.Length);
-        Instantiate(_wastePrefab[wastePrefabIndex], _spawnPoints[spawnPointIndex].position, _spawnPoints[spawnPointIndex].rotation);
+    public void SpawnWaste() {
+        Vector3 randomVector = Random.insideUnitSphere;
+        Vector3 randomOffset = new Vector3(randomVector.x * transform.lossyScale.x,
+                                           randomVector.y * transform.lossyScale.y,
+                                           randomVector.z * transform.lossyScale.z);
+
+        GameObject randomFromArray = _wastePrefab[Random.Range(0, _wastePrefab.Length)];
+        _spawnObject = Instantiate(randomFromArray, transform.position + randomOffset * 0.5f, transform.rotation);
+    }
+
+    public void StopSpawnWaste() {
+        CancelInvoke("SpawnWaste");
+        Debug.Log("Spawner was canceled");
     }
 }

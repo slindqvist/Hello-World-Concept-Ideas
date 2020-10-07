@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Outline_MAT
+  m_Name: Select_MAT
   m_Shader: {fileID: -6465566751694194690, guid: c81507e5809b6e0499b97f80db9fdb8a,
     type: 3}
   m_ShaderKeywords: 

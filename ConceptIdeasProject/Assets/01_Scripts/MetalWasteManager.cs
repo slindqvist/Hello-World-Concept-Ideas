@@ -26,6 +26,12 @@ public class MetalWasteManager : MonoBehaviour
         _metalAnimator.SetBool("IsFull", false);
     }
 
+    private void Update() {
+        if (_metalCount == 0) {
+            PlayMetalAnim();
+        }
+    }
+
     public void SetMetalCountText() {
         _metalText.text = _metalCount.ToString();
     }

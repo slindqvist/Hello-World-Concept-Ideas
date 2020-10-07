@@ -20,5 +20,6 @@ public class WasteMover : MonoBehaviour
         int steer = 1;
 
         _moverRigidbody.AddForceAtPosition(steer * transform.forward * _power, _motor.position);
+        Debug.Log("Motor turned on");
     }
 }

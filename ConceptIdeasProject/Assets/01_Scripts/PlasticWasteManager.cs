@@ -26,6 +26,12 @@ public class PlasticWasteManager : MonoBehaviour {
         _plasticAnimator.SetBool("IsFull", false);
     }
 
+    private void Update() {
+        if(_plasticCount == 0) {
+            PlayPlasticAnim();
+        }
+    }
+
     public void SetPlasticCountText() {
         _plasticText.text = _plasticCount.ToString();
     }

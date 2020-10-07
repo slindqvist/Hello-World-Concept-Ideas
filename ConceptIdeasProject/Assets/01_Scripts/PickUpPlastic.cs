@@ -18,11 +18,6 @@ public class PickUpPlastic : MonoBehaviour {
             Destroy(gameObject);
             Debug.Log("Plastic recycled");
         }
-
-        // 
-        else if (other.gameObject.CompareTag("Rod")) {
-            Debug.Log("Collect");
-        }
     }
 }
 

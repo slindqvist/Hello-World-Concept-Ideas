@@ -26,6 +26,12 @@ public class ElectronicWasteManager : MonoBehaviour
         _electronicAnimator.SetBool("IsFull", false);
     }
 
+    private void Update() {
+        if(_electronicCount == 0) {
+            PlayElectronicAnim();
+        }
+    }
+
     public void SetElectronicCountText() {
         _electronicText.text = _electronicCount.ToString();
     }

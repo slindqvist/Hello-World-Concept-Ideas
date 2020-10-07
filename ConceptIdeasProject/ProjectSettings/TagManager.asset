@@ -7,10 +7,7 @@ TagManager:
   - PlasticBin
   - MetalBin
   - ElectronicBin
-  - Plastic
-  - Metal
-  - Electronic
-  - Rod
+  - Land
   layers:
   - Default
   - TransparentFX
