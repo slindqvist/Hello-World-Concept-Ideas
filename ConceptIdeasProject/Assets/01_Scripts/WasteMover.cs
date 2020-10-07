@@ -5,7 +5,10 @@ using UnityEngine;
 public class WasteMover : MonoBehaviour
 {
     public Transform _motor;
-    public float _power = 1f;
+    public float _maxPower = 1f;
+    public float _minPower = 0.5f;
+
+    private float _power;
 
     protected Rigidbody _moverRigidbody;
     protected Quaternion _startRotation;
@@ -16,10 +19,10 @@ public class WasteMover : MonoBehaviour
     }
 
     private void FixedUpdate() {
+        _power = Random.Range(_minPower, _maxPower);
         Vector3 forceDirection = transform.forward;
         int steer = 1;
 
         _moverRigidbody.AddForceAtPosition(steer * transform.forward * _power, _motor.position);
-        Debug.Log("Motor turned on");
     }
 }

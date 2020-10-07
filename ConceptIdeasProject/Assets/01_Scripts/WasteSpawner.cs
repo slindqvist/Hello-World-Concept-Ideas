@@ -5,21 +5,40 @@ using UnityEngine;
 public class WasteSpawner : MonoBehaviour
 {
     public GameObject[] _wastePrefab;
-    public float _spawnTime = 10f;
     public bool debugMode;
+    public float _maxTime = 10f;
+    public float _minTime = 5f;
 
     private GameObject _spawnObject;
-    private float _spawnCounter;
+    private float _time;
+    private float _spawnTime;
 
-    private void Update() {
-        if (_spawnCounter <= 0) {
+    private void Start() {
+        
+    }
+
+    private void FixedUpdate() {
+        _time += Time.deltaTime;
+        //Check if it's the right time to spawn
+        if(_time >= _spawnTime) {
             Invoke("SpawnWaste", _spawnTime);
+            SetRandomTime();
+            _time = 0;
+        }
 
-            _spawnCounter = _spawnTime;
-        }
-        else {
-            _spawnCounter -= Time.deltaTime;
-        }
+        //if (_time <= 0) {
+        //    Invoke("SpawnWaste", _spawnTime);
+
+        //    _time = _spawnTime;
+        //}
+        //else {
+        //    _time -= Time.deltaTime;
+        //}
+    }
+
+    private void SetRandomTime() {
+        _spawnTime = Random.Range(_minTime, _maxTime);
+        Debug.Log("Next object spawn in " + _spawnTime + " seconds.");
     }
 
     public void SpawnWaste() {
