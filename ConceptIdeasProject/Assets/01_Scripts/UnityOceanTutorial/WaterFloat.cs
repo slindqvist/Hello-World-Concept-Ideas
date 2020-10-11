@@ -135,7 +135,7 @@ public class WaterFloat : MonoBehaviour {
             if (Waves != null) {
                 // Draw cube
                 Gizmos.color = Color.red;
-                Gizmos.DrawCube(WaterLinePoints[i], Vector3.one * 0.3f);
+                Gizmos.DrawCube(WaterLinePoints[i], Vector3.one * 0.1f);
             }
 
             // Draw sphere
@@ -145,7 +145,7 @@ public class WaterFloat : MonoBehaviour {
         // Draw center
         if (Application.isPlaying) {
             Gizmos.color = Color.red;
-            Gizmos.DrawCube(new Vector3(Center.x, WaterLine, Center.z), Vector3.one * 1f);
+            Gizmos.DrawCube(new Vector3(Center.x, WaterLine, Center.z), Vector3.one * 0.1f);
         }
     }
 }

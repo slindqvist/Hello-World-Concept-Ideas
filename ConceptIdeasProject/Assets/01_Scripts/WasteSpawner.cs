@@ -18,22 +18,6 @@ public class WasteSpawner : MonoBehaviour {
         SpawnWaste = StartCoroutine(SpawnWasteCoroutine());
     }
 
-    //private void Update() {
-    //    _time += Time.deltaTime;
-    //    //Check if it's the right time to spawn
-    //    if (_time >= _spawnTime) {
-    //        if(SpawnWaste == null) {
-    //            SpawnWaste = StartCoroutine(SpawnWasteCoroutine()); //Sätt Coroutine = StartCoroutine(IEnumerator);
-    //        }
-    //        else {
-    //            StopCoroutine(SpawnWaste); //Då kan du stoppa den innan du kör den
-    //            SpawnWaste = StartCoroutine(SpawnWasteCoroutine());
-    //        }
-    //        SetRandomTime();
-    //        _time = 0;
-    //    }
-    //}
-
     private void SetRandomTime() {
         _spawnTime = Random.Range(_minTime, _maxTime);
         Debug.Log("Next object spawn in " + _spawnTime + " seconds.");
@@ -55,7 +39,6 @@ public class WasteSpawner : MonoBehaviour {
     }
 
     public void StopSpawnWaste() {
-        //StopCoroutine(SpawnWasteCoroutine());
         if (SpawnWaste != null) {
             StopCoroutine(SpawnWaste);
             Debug.Log("Spawner stopped");

@@ -3061,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _motor: {fileID: 588821517231097538}
-  _maxPower: 1
+  _maxPower: 0.75
   _minPower: 0.5
 --- !u!114 &4910908810644070448
 MonoBehaviour:
@@ -3075,7 +3075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a276fc6a550f7574cbabfe41cdec7e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lifetime: 60
+  _lifetime: 120
 --- !u!114 &4910908810644070449
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class PlasticWasteManager : MonoBehaviour {
 
     private Animator _plasticAnimator;
 
-    //public GameObject _plastic; // Skapa en array ca 15 objekt med tags 1-15
+    //public GameObject _plastic;
     //public Transform _rod;
     //public Rigidbody _rigidbody;
 
@@ -19,7 +19,7 @@ public class PlasticWasteManager : MonoBehaviour {
         _plasticText = GetComponentInChildren<TextMeshProUGUI>();
         _plasticAnimator = GetComponentInChildren<Animator>();
 
-        _plasticCount = 1;
+        _plasticCount = 3;
 
         SetPlasticCountText();
 
@@ -42,7 +42,6 @@ public class PlasticWasteManager : MonoBehaviour {
     }
 
     //public void CollectPlasticWaste() {
-    //    // Skapa en switch sats med cases eller if statement
     //    _plastic.transform.SetParent(_rod);
     //    _rigidbody.isKinematic = true;
     //    Debug.Log("Plastic collected");

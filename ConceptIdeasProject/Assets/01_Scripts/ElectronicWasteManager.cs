@@ -19,7 +19,7 @@ public class ElectronicWasteManager : MonoBehaviour
         _electronicText = GetComponentInChildren<TextMeshProUGUI>();
         _electronicAnimator = GetComponentInChildren<Animator>();
 
-        _electronicCount = 1;
+        _electronicCount = 3;
 
         SetElectronicCountText();
 

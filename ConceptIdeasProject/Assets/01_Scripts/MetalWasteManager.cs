@@ -19,7 +19,7 @@ public class MetalWasteManager : MonoBehaviour
         _metalText = GetComponentInChildren<TextMeshProUGUI>();
         _metalAnimator = GetComponentInChildren<Animator>();
 
-        _metalCount = 1;
+        _metalCount = 4;
 
         SetMetalCountText();
 
