@@ -8,6 +8,7 @@ TagManager:
   - MetalBin
   - ElectronicBin
   - Land
+  - Rod
   layers:
   - Default
   - TransparentFX
