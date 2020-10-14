@@ -23,6 +23,7 @@ public class SharkFollower : MonoBehaviour {
     }
 
     private void Follow() {
+        // Dive before attack
         _following = true;
         transform.position += transform.forward * Time.deltaTime * _chaseSpeed;
         Vector3 rodDirection = _fishingRod.position - transform.position;
