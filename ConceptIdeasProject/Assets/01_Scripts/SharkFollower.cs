@@ -4,12 +4,13 @@ public class SharkFollower : MonoBehaviour {
     [SerializeField] Transform _fishingRod;
     [SerializeField] float _chaseSpeed = 4f;
     [SerializeField] float _rotateSpeed = 2f;
+    private float _swimUpDistance = 5f;
 
     public Transform[] _waypoints;
     public float _moveSpeed;
-    int _currentIndex = 0;
-    float _waypointRadius = 1f;
-    bool _following = false;
+    private int _currentIndex = 0;
+    private float _waypointRadius = 1f;
+    private bool _following = false;
 
     void Update() {
         if (_fishingRod.transform.position.y <= 0) {
@@ -22,6 +23,10 @@ public class SharkFollower : MonoBehaviour {
 
     private void Follow() {
         // Dive before attack
+        //if (Vector3.Distance(transform.position, _fishingRod.position) > _swimUpDistance) {
+        //    targetToFollow = new Vector3(_fishingRod.position.x, transform.position.y, _fishingRod.position.z);
+        //}
+
         _following = true;
         transform.position += transform.forward * Time.deltaTime * _chaseSpeed;
         Vector3 rodDirection = _fishingRod.position - transform.position;

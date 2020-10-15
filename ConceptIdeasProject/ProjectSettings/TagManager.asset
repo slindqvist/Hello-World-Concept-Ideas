@@ -10,6 +10,7 @@ TagManager:
   - Land
   - Rod
   - Drop Zone
+  - Shark
   layers:
   - Default
   - TransparentFX

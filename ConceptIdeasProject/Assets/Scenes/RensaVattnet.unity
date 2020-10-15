@@ -496,20 +496,13 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -9189612823058448048, guid: c1ef3864f6d1f654f88c5497c1034f5c, type: 3}
---- !u!114 &238400671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_Mesh: {fileID: -1408114682822163975, guid: c1ef3864f6d1f654f88c5497c1034f5c, type: 3}
+--- !u!4 &238400670 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: c1ef3864f6d1f654f88c5497c1034f5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 238400665}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 238400666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa4fc4a6f1b052e478d97a7d4577ade7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fishingRod: {fileID: 481303497}
 --- !u!65 &238400672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1175,7 +1168,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573590847}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1187,7 +1180,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573590847}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1236,7 +1229,7 @@ Transform:
   m_GameObject: {fileID: 573590847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.26497173, y: -6.75, z: -0.22520256}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalScale: {x: 40, y: 1, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -1371,6 +1364,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 079d76139eec8b243858582fd828433b, type: 3}
+--- !u!1 &685171722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 685171723}
+  m_Layer: 0
+  m_Name: Respawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685171723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685171722}
+  m_LocalRotation: {x: 0.5, y: 0.4999995, z: 0.50000054, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0.697, z: -0.001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 238400670}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 90.00001}
 --- !u!1001 &696861763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1383,6 +1406,14 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 144230, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -2099,7 +2130,7 @@ GameObject:
   - component: {fileID: 1217747624}
   m_Layer: 0
   m_Name: Shark Container
-  m_TagString: Untagged
+  m_TagString: Shark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2743,6 +2774,11 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 7417dcdd211d4b24d8a735032bca83eb,
         type: 3}
       propertyPath: m_Name
+      value: Shark
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7417dcdd211d4b24d8a735032bca83eb,
+        type: 3}
+      propertyPath: m_TagString
       value: Shark
       objectReference: {fileID: 0}
     - target: {fileID: -910648368691675519, guid: 7417dcdd211d4b24d8a735032bca83eb,
@@ -4206,15 +4242,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fishing Rod Container
       objectReference: {fileID: 0}
+    - target: {fileID: 3657994530984451052, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657994530984451052, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3657994530984451056, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.775
+      value: 3.777
       objectReference: {fileID: 0}
     - target: {fileID: 3657994530984451056, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.224
+      value: 1.511
       objectReference: {fileID: 0}
     - target: {fileID: 3657994530984451056, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
         type: 3}
@@ -4261,6 +4307,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 3657994530984451059, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
+        type: 3}
+      propertyPath: onHandHoverBegin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_material
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937130404021592034, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
+        type: 3}
+      propertyPath: _stand
+      value: 
+      objectReference: {fileID: 685171723}
+    - target: {fileID: 8937130404021592034, guid: c3fdbe6ff0ac576429ba6971c60b9e52,
+        type: 3}
+      propertyPath: _child
+      value: 
+      objectReference: {fileID: 481303497}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3fdbe6ff0ac576429ba6971c60b9e52, type: 3}
 --- !u!1 &3857025606926076467
