@@ -9,6 +9,7 @@ TagManager:
   - ElectronicBin
   - Land
   - Rod
+  - Drop Zone
   layers:
   - Default
   - TransparentFX
