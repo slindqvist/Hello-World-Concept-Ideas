@@ -13,7 +13,6 @@ public class MetalWasteManager : MonoBehaviour
     //public Rigidbody _metalRigidbody;
 
     void Start() {
-        _metalText = GetComponentInChildren<TextMeshProUGUI>();
         _metalAnimator = GetComponentInChildren<Animator>();
 
         _metalCount = 4;

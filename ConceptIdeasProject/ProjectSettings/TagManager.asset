@@ -11,6 +11,9 @@ TagManager:
   - Rod
   - Drop Zone
   - Shark
+  - Plastic
+  - Metal
+  - Electronic
   layers:
   - Default
   - TransparentFX

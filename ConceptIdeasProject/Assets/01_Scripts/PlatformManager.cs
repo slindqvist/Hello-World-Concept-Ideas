@@ -3,32 +3,31 @@ using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
-    public Transform[] _secondLvlTargets;
-    private int _secondLevelTargetIndex;
+    public GameObject _icePlatform;
+    public float _scaleDownTime = 360f;
 
-    public float _transportationTime = 5.0f;
-    
-    public void ActivateSecondLevel() {
-        StartCoroutine(SecondLvlCoroutine(_secondLvlTargets[_secondLevelTargetIndex]));
-        Debug.Log("Raise second platform");
+    private bool _isScaling = false;
+
+    private void Start() {
+        StartCoroutine(ScaleOverTime(_icePlatform.transform, new Vector3(45, 25, 45), _scaleDownTime));
     }
 
-    public void ActivateThirdPlatform() {
-        Debug.Log("Raise third platform");
-    }
+    private IEnumerator ScaleOverTime(Transform obectToScale, Vector3 toScale, float duration) {
+        if (_isScaling) {
+            yield break;
+        }
+        _isScaling = true;
 
-    private IEnumerator SecondLvlCoroutine(Transform target) {
-        Debug.Log("Coroutine started");
-        Vector3 startPos = transform.position;
-        float lerper = 0;
-        while (lerper < 1f) {
-            lerper += Time.deltaTime / _transportationTime;
-            transform.position = Vector3.Lerp(startPos, target.position, lerper);
-            yield return 0;
+        float counter = 0;
+
+        Vector3 startScaleSize = obectToScale.localScale;
+
+        while (counter < duration) {
+            counter += Time.deltaTime;
+            obectToScale.localScale = Vector3.Lerp(startScaleSize, toScale, counter / duration);
+            yield return null;
         }
-        _secondLevelTargetIndex++;
-        if (_secondLevelTargetIndex == _secondLvlTargets.Length) {
-            _secondLevelTargetIndex = 0;
-        }
+
+        _isScaling = false;
     }
 }

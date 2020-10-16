@@ -13,7 +13,6 @@ public class PlasticWasteManager : MonoBehaviour {
     //public Rigidbody _rigidbody;
 
     void Start() {
-        _plasticText = GetComponentInChildren<TextMeshProUGUI>();
         _plasticAnimator = GetComponentInChildren<Animator>();
 
         _plasticCount = 3;

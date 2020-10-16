@@ -13,7 +13,6 @@ public class ElectronicWasteManager : MonoBehaviour
     //public Rigidbody _electronicRigidbody;
 
     void Start() {
-        _electronicText = GetComponentInChildren<TextMeshProUGUI>();
         _electronicAnimator = GetComponentInChildren<Animator>();
 
         _electronicCount = 3;
