@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour {
     private PlasticWasteManager _plasticManager;
@@ -7,8 +8,10 @@ public class ScoreManager : MonoBehaviour {
     private WasteSpawner _wasteSpawner;
 
     public bool _firstLevelComplete;
-
     private float _score = 0f;
+
+    public TextMeshProUGUI _scoreboardText;
+    private int _points;
 
     void Start() {
         _plasticManager = FindObjectOfType<PlasticWasteManager>();
@@ -17,6 +20,9 @@ public class ScoreManager : MonoBehaviour {
         _wasteSpawner = FindObjectOfType<WasteSpawner>();
 
         _firstLevelComplete = false;
+
+        _points = 0;
+        _scoreboardText.text = "Score: " + _points;
     }
 
     void Update() {
@@ -33,5 +39,10 @@ public class ScoreManager : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public void AddPointsToScoreboard(int amount) {
+        _points = _points + amount;
+        _scoreboardText.text = "Score: " + _points;
     }
 }

@@ -7,39 +7,44 @@ public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI _timerText;
     public TextMeshProUGUI _gameOverText;
-    public float _totalTime = 180f;
+    public float _timeRemaining = 180f;
 
-    private float _minutes;
-    private float _seconds;
+    private bool _timerIsRunning;
 
     void Start()
     {
         _gameOverText.enabled = false;
+        _timerIsRunning = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         CountDownTimer();
     }
 
     public void CountDownTimer() {
-        _totalTime -= Time.deltaTime;
-
-        _minutes = (int)(_totalTime / 60);
-        _seconds = (int)(_totalTime % 60);
-
-        _timerText.text = _minutes.ToString() + ":" + _seconds.ToString();
-
-        if (_minutes == 0 && _seconds == 10) {
-            _timerText.color = Color.red;
+        if(_timeRemaining > 0) {
+            _timeRemaining -= Time.deltaTime;
+            DisplayTime(_timeRemaining);
         }
-
-        if(_minutes == 0 && _seconds == 0) {
+        else {
+            // Game over text
+            Debug.Log("Time has run out!");
             _timerText.enabled = false;
             _gameOverText.enabled = true;
+            _timeRemaining = 0;
+            _timerIsRunning = false;
         }
     }
 
+    void DisplayTime(float timeToDisplay) {
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
+        _timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        if(minutes == 0 && seconds == 10) {
+            _timerText.color = Color.red;
+        }
+    }
 }
