@@ -22,7 +22,7 @@ public class ScoreManager : MonoBehaviour {
         _firstLevelComplete = false;
 
         _points = 0;
-        _scoreboardText.text = "Score: " + _points;
+        _scoreboardText.text = "Bonus: " + _points + "p";
     }
 
     void Update() {
@@ -43,6 +43,6 @@ public class ScoreManager : MonoBehaviour {
 
     public void AddPointsToScoreboard(int amount) {
         _points = _points + amount;
-        _scoreboardText.text = "Score: " + _points;
+        _scoreboardText.text = "Bonus: " + _points + "p";
     }
 }
