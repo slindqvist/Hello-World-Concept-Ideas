@@ -4,16 +4,19 @@ public class PickUpMetal : MonoBehaviour
 {
     MetalWasteManager _metalWasteManager;
     ScoreManager _scoreManager;
+    AudioManager _audioManager;
 
     private int _recycleValue = 1;
 
     private void Start() {
         _metalWasteManager = FindObjectOfType<MetalWasteManager>();
         _scoreManager = FindObjectOfType<ScoreManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("MetalBin")) {
+            _audioManager.PlayMetalDrop();
 
             _metalWasteManager._metalCount = _metalWasteManager._metalCount - 1;
             _scoreManager.AddPointsToScoreboard(_recycleValue);

@@ -5,14 +5,18 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    AudioManager _audioManager;
+
     public TextMeshProUGUI _timerText;
     public TextMeshProUGUI _gameOverText;
     public float _timeRemaining = 180f;
 
     private bool _timerIsRunning;
+    private bool _gameOver;
 
     void Start()
     {
+        _audioManager = FindObjectOfType<AudioManager>();
         _gameOverText.enabled = false;
         _timerIsRunning = true;
     }
@@ -45,6 +49,8 @@ public class Timer : MonoBehaviour
 
         if(minutes == 0 && seconds == 10) {
             _timerText.color = Color.red;
+            // Play timer sound
+            _audioManager.PlayTimerCountdown();
         }
     }
 }

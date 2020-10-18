@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RodTrigger : MonoBehaviour {
+    AudioManager _audioManager;
+
     public Transform _stand;
     public float _respawnTime = 2f;
 
@@ -11,6 +13,7 @@ public class RodTrigger : MonoBehaviour {
     private bool _hasSpawned;
     
     private void Start() {
+        _audioManager = FindObjectOfType<AudioManager>();
         _rodRenderers = GetComponentsInChildren<Renderer>();
     }
 
@@ -20,8 +23,13 @@ public class RodTrigger : MonoBehaviour {
         }
 
         if (other.gameObject.CompareTag("Shark")) {
+            _audioManager.PlaySharkAttack();
             DestroyRod();
             Debug.Log("Shark found");
+        }
+
+        if (other.gameObject.CompareTag("Waves")) {
+            _audioManager.PlayRodSplash();
         }
     }
 
