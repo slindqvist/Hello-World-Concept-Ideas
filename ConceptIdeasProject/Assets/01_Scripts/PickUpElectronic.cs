@@ -17,7 +17,7 @@ public class PickUpElectronic : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("ElectronicBin")) {
             // Play collision sound when hitting the bin
-            _audioManager.PlayElectronicDrop();
+            _audioManager.StartCoroutine("PlayElectronicDrop");
 
             _electronicWasteManager._electronicCount = _electronicWasteManager._electronicCount - 1;
             _scoreManager.AddPointsToScoreboard(_recycleValue);

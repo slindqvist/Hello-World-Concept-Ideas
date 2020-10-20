@@ -16,7 +16,7 @@ public class PickUpMetal : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("MetalBin")) {
-            _audioManager.PlayMetalDrop();
+            _audioManager.StartCoroutine("PlayMetalDrop");
 
             _metalWasteManager._metalCount = _metalWasteManager._metalCount - 1;
             _scoreManager.AddPointsToScoreboard(_recycleValue);

@@ -15,7 +15,7 @@ public class PickUpPlastic : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("PlasticBin")) {
-            _audioManager.PlayPlasticDrop();
+            _audioManager.StartCoroutine("PlayPlasticDrop");
 
             _plasticWasteManager._plasticCount = _plasticWasteManager._plasticCount - 1;
             _scoreManager.AddPointsToScoreboard(_recycleValue);
