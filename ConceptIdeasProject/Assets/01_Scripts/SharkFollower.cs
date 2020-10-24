@@ -21,12 +21,12 @@ public class SharkFollower : MonoBehaviour {
     }
 
     private void Follow() {
-            _following = true;
-            transform.position += transform.forward * Time.deltaTime * _chaseSpeed;
-            Vector3 rodDirection = _fishingRod.position - transform.position;
-            Quaternion lookRotation = Quaternion.LookRotation(rodDirection);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime * _rotateSpeed);
-            Debug.Log("Chasing rod");
+        _following = true;
+        transform.position += transform.forward * Time.deltaTime * _chaseSpeed;
+        Vector3 rodDirection = _fishingRod.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(rodDirection);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime * _rotateSpeed);
+        Debug.Log("Chasing rod");
     }
 
     private void Swim() {
