@@ -14,9 +14,7 @@ public class PlasticWasteManager : MonoBehaviour {
 
     void Start() {
         _plasticAnimator = GetComponentInChildren<Animator>();
-
-        _plasticCount = 3;
-
+        
         SetPlasticCountText();
 
         _plasticAnimator.SetBool("IsFull", false);

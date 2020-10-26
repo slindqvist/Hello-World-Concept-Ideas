@@ -11,6 +11,10 @@ public class SharkFollower : MonoBehaviour {
     private float _waypointRadius = 1f;
     private bool _following = false;
 
+    private float _swimUpDistance = 5f;
+    private float _deepOffset = -5f;
+    private Vector3 targetToFollow;
+
     void Update() {
         if (_fishingRod.transform.position.y <= 0) {
             Follow();
@@ -21,9 +25,17 @@ public class SharkFollower : MonoBehaviour {
     }
 
     private void Follow() {
+        if (Vector3.Distance(transform.position, _fishingRod.position) > _swimUpDistance) {
+            targetToFollow = new Vector3(_fishingRod.position.x, _deepOffset, _fishingRod.position.z);
+            Debug.Log("Attack rod");
+        }
+        else {
+            targetToFollow = _fishingRod.position;
+        }
+
         _following = true;
         transform.position += transform.forward * Time.deltaTime * _chaseSpeed;
-        Vector3 rodDirection = _fishingRod.position - transform.position;
+        Vector3 rodDirection = targetToFollow - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(rodDirection);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, Time.deltaTime * _rotateSpeed);
         Debug.Log("Chasing rod");

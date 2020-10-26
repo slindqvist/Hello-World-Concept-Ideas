@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour {
     private MetalWasteManager _metalManager;
     private ElectronicWasteManager _electronicManager;
     private WasteSpawner _wasteSpawner;
+    private WinSceneAnimControl _winSceneAnimControl;
 
     public bool _firstLevelComplete;
     private float _score = 0f;
@@ -18,6 +19,7 @@ public class ScoreManager : MonoBehaviour {
         _metalManager = FindObjectOfType<MetalWasteManager>();
         _electronicManager = FindObjectOfType<ElectronicWasteManager>();
         _wasteSpawner = FindObjectOfType<WasteSpawner>();
+        _winSceneAnimControl = FindObjectOfType<WinSceneAnimControl>();
 
         _firstLevelComplete = false;
 
@@ -30,9 +32,8 @@ public class ScoreManager : MonoBehaviour {
             if (_plasticManager._plasticCount == _score) {
                 if (_metalManager._metalCount == _score) {
                     if (_electronicManager._electronicCount == _score) {
-                        // Close spawner
                         _wasteSpawner.StopSpawnWaste();
-
+                        _winSceneAnimControl.PlayWinScene();
                         _firstLevelComplete = true;
                         Debug.Log("Level 1 Complete");
                     }

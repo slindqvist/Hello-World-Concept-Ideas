@@ -14,9 +14,7 @@ public class ElectronicWasteManager : MonoBehaviour
 
     void Start() {
         _electronicAnimator = GetComponentInChildren<Animator>();
-
-        _electronicCount = 3;
-
+        
         SetElectronicCountText();
 
         _electronicAnimator.SetBool("IsFull", false);

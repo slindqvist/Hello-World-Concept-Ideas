@@ -14,9 +14,7 @@ public class MetalWasteManager : MonoBehaviour
 
     void Start() {
         _metalAnimator = GetComponentInChildren<Animator>();
-
-        _metalCount = 4;
-
+        
         SetMetalCountText();
 
         _metalAnimator.SetBool("IsFull", false);
