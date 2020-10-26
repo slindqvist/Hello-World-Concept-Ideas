@@ -46,4 +46,9 @@ public class ScoreManager : MonoBehaviour {
         _points = _points + amount;
         _scoreboardText.text = "Bonus: " + _points + "p";
     }
+
+    public void SubtractPointsToScoreboard(int amount) {
+        _points = _points - amount;
+        _scoreboardText.text = "Bonus: " + _points + "p";
+    }
 }

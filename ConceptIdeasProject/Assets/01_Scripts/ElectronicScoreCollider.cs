@@ -8,6 +8,7 @@ public class ElectronicScoreCollider : MonoBehaviour
     AudioManager _audioManager;
 
     private int _targetHitValue = 10;
+    private bool _sccoreAdded = false;
 
     private void Start() {
         _scoreManager = FindObjectOfType<ScoreManager>();
@@ -15,10 +16,10 @@ public class ElectronicScoreCollider : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Electronic")) {
+        if (other.gameObject.CompareTag("Electronic") && !_sccoreAdded) {
             _audioManager.PlayScorePoint();
-            //Set score +10p
             _scoreManager.AddPointsToScoreboard(_targetHitValue);
+            _sccoreAdded = true;
         }
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Metal
   - Electronic
   - Waves
+  - Item
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RodTrigger : MonoBehaviour {
+    ScoreManager _scoreManager;
     AudioManager _audioManager;
 
     public Transform _stand;
@@ -11,8 +12,12 @@ public class RodTrigger : MonoBehaviour {
     private Material[] _previousMaterial;
     private Renderer[] _rodRenderers;
     private bool _hasSpawned;
+
+    private int _sharkBiteValue = 10;
+    private bool _scoreSubtracted = false;
     
     private void Start() {
+        _scoreManager = FindObjectOfType<ScoreManager>();
         _audioManager = FindObjectOfType<AudioManager>();
         _rodRenderers = GetComponentsInChildren<Renderer>();
     }
@@ -22,8 +27,10 @@ public class RodTrigger : MonoBehaviour {
             DestroyRod();
         }
 
-        if (other.gameObject.CompareTag("Shark")) {
+        if (other.gameObject.CompareTag("Shark") && !_scoreSubtracted) {
             _audioManager.PlaySharkAttack();
+            _scoreManager.SubtractPointsToScoreboard(_sharkBiteValue);
+            _scoreSubtracted = true;
             DestroyRod();
             Debug.Log("Shark found");
         }
