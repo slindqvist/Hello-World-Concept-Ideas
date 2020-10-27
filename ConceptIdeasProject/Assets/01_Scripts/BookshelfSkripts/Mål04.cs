@@ -11,6 +11,9 @@ public class Mål04 : MonoBehaviour
     public GameObject _collider04;
     public GameObject _light04;
 
+    public Transform _transformCube04;
+    public Transform _respawnPoint;
+
     private void OnTriggerEnter(Collider other)
     {
         if (_light04.activeSelf)
@@ -25,6 +28,12 @@ public class Mål04 : MonoBehaviour
                     _cubeOnRightPlace.Invoke();
                 }
             }
+        }
+
+        if (other.CompareTag("RespawnArea"))
+        {
+            _transformCube04.transform.position = _respawnPoint.transform.position;
+
         }
     }
 }

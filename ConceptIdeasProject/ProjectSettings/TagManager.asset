@@ -23,6 +23,7 @@ TagManager:
   - "M\xE5l16"
   - "M\xE5l17"
   - "M\xE5lLogo"
+  - RespawnArea
   layers:
   - Default
   - TransparentFX
