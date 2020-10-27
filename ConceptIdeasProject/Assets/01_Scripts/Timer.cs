@@ -5,6 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
+    ScoreManager _scoreManager;
     AudioManager _audioManager;
 
     public TextMeshProUGUI _timerText;
@@ -16,6 +17,7 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+        _scoreManager = FindObjectOfType<ScoreManager>();
         _audioManager = FindObjectOfType<AudioManager>();
         _gameOverText.enabled = false;
         _timerIsRunning = true;
@@ -42,6 +44,7 @@ public class Timer : MonoBehaviour
             _audioManager.StopTimerCountdown();
             _audioManager.PlayGameOver();
             _gameOver = true;
+            _scoreManager.StartCoroutine("GameOverCoroutine");
         }
     }
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 using TMPro;
 
 public class ScoreManager : MonoBehaviour {
@@ -13,6 +14,9 @@ public class ScoreManager : MonoBehaviour {
 
     public TextMeshProUGUI _scoreboardText;
     private int _points;
+
+    public GameObject _placeHolder;
+    public float waitTime = 10f;
 
     void Start() {
         _plasticManager = FindObjectOfType<PlasticWasteManager>();
@@ -50,5 +54,10 @@ public class ScoreManager : MonoBehaviour {
     public void SubtractPointsToScoreboard(int amount) {
         _points = _points - amount;
         _scoreboardText.text = "Bonus: " + _points + "p";
+    }
+
+    public IEnumerator GameOverCoroutine() {
+        yield return new WaitForSeconds(waitTime);
+        _placeHolder.SetActive(true);
     }
 }
