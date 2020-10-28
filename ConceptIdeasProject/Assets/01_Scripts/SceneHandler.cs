@@ -10,7 +10,8 @@ public class SceneHandler : MonoBehaviour {
     public SteamVR_Input_Sources _hand;
 
     public SteamVR_LaserPointer _laserPointer;
-    public GameObject _rensaVattnetPlaceHolder;
+    public GameObject _rensaVattnetPlaceHolder,
+                      _bokhyllanPlaceHolder;
 
     private void Awake() {
         _laserPointer.PointerIn += PointerInside;
@@ -26,6 +27,7 @@ public class SceneHandler : MonoBehaviour {
             Debug.Log("Rensa vattnet was clicked");
         }
         else if (e.target.name == "Bokhyllan") {
+            _bokhyllanPlaceHolder.SetActive(true);
             Debug.Log("Bokhyllan was clicked");
         }
     }
@@ -49,7 +51,7 @@ public class SceneHandler : MonoBehaviour {
     }
 
     protected void Update() {
-        if (SteamVR_Actions.default_GrabGrip.GetLastStateDown(_hand)){
+        if (SteamVR_Actions.default_GrabGrip.GetLastStateDown(_hand)) {
             _laserPointer.active = true;
             Debug.Log("Grip was touched");
         }

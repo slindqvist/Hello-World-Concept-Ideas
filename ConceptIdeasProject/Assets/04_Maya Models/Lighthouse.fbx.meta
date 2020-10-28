@@ -3,7 +3,62 @@ guid: 079d76139eec8b243858582fd828433b
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Billboard1
+    second: {fileID: 2100000, guid: f772f5264d4c0f54190b29fd1059cac1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BillboardDisplay
+    second: {fileID: 2100000, guid: 51599c5876aaeb44d94e9c3d3f6d4298, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rocks1
+    second: {fileID: 2100000, guid: ef636df7d0658c548b37212202263ca8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: creamWhite_Lighthouse
+    second: {fileID: 2100000, guid: c829f83dcd194a24ba96170c3a1f09fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darkBrown_Lighthouse
+    second: {fileID: 2100000, guid: 56f99f34c8a44b44197668ee5dcd3590, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darkRed_Lighthouse
+    second: {fileID: 2100000, guid: 33ef9922c566fe14fa9f9a515013d7c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_LargeWindow
+    second: {fileID: 2100000, guid: 3dabe4afaa858ff428052a96bfdffe6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_SmallWindow
+    second: {fileID: 2100000, guid: 830db6ac4c9f27a40b4d18e24a7e53a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lightBrown_Lighthouse
+    second: {fileID: 2100000, guid: 952e0c902d177c244bc7405794e6b1ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lightRed_Lighthouse
+    second: {fileID: 2100000, guid: 7a81d4758ce4db84fa53c183a7484670, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_Handle
+    second: {fileID: 2100000, guid: 713d3f2fb59e287489680bf4a8a797bc, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

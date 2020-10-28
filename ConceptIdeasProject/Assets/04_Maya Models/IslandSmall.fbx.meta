@@ -3,7 +3,17 @@ guid: 9892cf1db3355a5409b4268e68663a0c
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Billboard
+    second: {fileID: 2100000, guid: aaecd4bb119a9e243b3662dc34b1c9bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ice1
+    second: {fileID: 2100000, guid: 68aa52bf8a4e9504480b3acbb9333bbe, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

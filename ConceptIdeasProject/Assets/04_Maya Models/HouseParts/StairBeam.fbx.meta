@@ -3,7 +3,27 @@ guid: 332c892513ff83c4ab0de4978afe1670
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BeamColor
+    second: {fileID: 2100000, guid: 7923019cd46919c49a550baa754ec855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalBeamFrame
+    second: {fileID: 2100000, guid: 03575ba39ff232d4d98633947779d0e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScruwColor
+    second: {fileID: 2100000, guid: 55dcd6c417699704682793844a16228f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 2fc281e2656d0694db13c94aa3835cb0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

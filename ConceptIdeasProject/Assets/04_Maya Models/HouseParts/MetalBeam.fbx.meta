@@ -3,7 +3,17 @@ guid: 3495925f171621946be5328babee7fa3
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BeamColor
+    second: {fileID: 2100000, guid: 6b4841a72a222cd4e968f5889ae2d66c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScruwColor
+    second: {fileID: 2100000, guid: c93b4f8c3ce319847a17fcc713ef1d50, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -5006,7 +5006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timerText: {fileID: 500973731}
   _gameOverText: {fileID: 792307592}
-  _timeRemaining: 10
+  _timeRemaining: 180
 --- !u!114 &950521624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7821,12 +7821,12 @@ MonoBehaviour:
   loadingScreenDistance: 0
   loadingScreenTransform: {fileID: 0}
   progressBarTransform: {fileID: 0}
-  front: {fileID: 0}
-  back: {fileID: 0}
-  left: {fileID: 0}
-  right: {fileID: 0}
-  top: {fileID: 0}
-  bottom: {fileID: 0}
+  front: {fileID: 2800000, guid: 5cd44424375bd4ad69191a50c41ec04d, type: 3}
+  back: {fileID: 2800000, guid: baee46fd4fc8d4898864f4963bb39f34, type: 3}
+  left: {fileID: 2800000, guid: 30795c4c7d28549fc98ea24071c47626, type: 3}
+  right: {fileID: 2800000, guid: 69090bcf98b624e77a2f519630debe54, type: 3}
+  top: {fileID: 2800000, guid: d8144633fec3342d9b7d9388377fb2a6, type: 3}
+  bottom: {fileID: 2800000, guid: e23c4e30896d34af5beb066fcf2790c7, type: 3}
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
   showGrid: 0
   fadeOutTime: 0.5

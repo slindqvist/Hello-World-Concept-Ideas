@@ -3,7 +3,22 @@ guid: 84b147d3f20fc934ca6db5d5ca3e7b34
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallColor
+    second: {fileID: 2100000, guid: 02a1e74317db040459520cc2b36da47a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallFrameColor
+    second: {fileID: 2100000, guid: 68e64a89cd682024889ea83d14267c15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 1e699797e3e42db43ae16de2ec610b58, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

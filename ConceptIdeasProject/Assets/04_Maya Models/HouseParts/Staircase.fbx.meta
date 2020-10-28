@@ -3,7 +3,22 @@ guid: 025a745fa1528154582d8dd1f61d06dd
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailColor
+    second: {fileID: 2100000, guid: f0acda6b0d0e6b9468eb92aaa71d7fe5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StairColor
+    second: {fileID: 2100000, guid: 8630a5026c15bc641a0da7d905ce4cb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StairFrameColor
+    second: {fileID: 2100000, guid: 9709566d2e7b82d4fa40461fbe334eb3, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

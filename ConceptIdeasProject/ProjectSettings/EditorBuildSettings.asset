@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RensaVattnet.unity
     guid: e3961afb31457b64989cfc9c225beeaf
+  - enabled: 1
+    path: Assets/Scenes/Bokhyllan.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 69fdaf18f8b408940b4fe9e16fa250ee,
       type: 2}

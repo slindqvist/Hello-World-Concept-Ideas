@@ -3,7 +3,12 @@ guid: 899cf99eec377cc44867a919e0bd59d0
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorColor
+    second: {fileID: 2100000, guid: 67fd8682845ce4c4485ca26c728d1920, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
