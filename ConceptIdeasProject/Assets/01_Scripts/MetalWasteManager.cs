@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine.Animations;
 
 public class MetalWasteManager : MonoBehaviour
 {
@@ -16,11 +13,8 @@ public class MetalWasteManager : MonoBehaviour
     //public Rigidbody _metalRigidbody;
 
     void Start() {
-        _metalText = GetComponentInChildren<TextMeshProUGUI>();
         _metalAnimator = GetComponentInChildren<Animator>();
-
-        _metalCount = 4;
-
+        
         SetMetalCountText();
 
         _metalAnimator.SetBool("IsFull", false);

@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine.Animations;
 
 public class ElectronicWasteManager : MonoBehaviour
 {
@@ -16,11 +13,8 @@ public class ElectronicWasteManager : MonoBehaviour
     //public Rigidbody _electronicRigidbody;
 
     void Start() {
-        _electronicText = GetComponentInChildren<TextMeshProUGUI>();
         _electronicAnimator = GetComponentInChildren<Animator>();
-
-        _electronicCount = 3;
-
+        
         SetElectronicCountText();
 
         _electronicAnimator.SetBool("IsFull", false);

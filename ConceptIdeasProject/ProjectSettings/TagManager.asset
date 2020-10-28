@@ -9,6 +9,13 @@ TagManager:
   - ElectronicBin
   - Land
   - Rod
+  - Drop Zone
+  - Shark
+  - Plastic
+  - Metal
+  - Electronic
+  - Waves
+  - Item
   layers:
   - Default
   - TransparentFX

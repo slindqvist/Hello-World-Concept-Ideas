@@ -2,10 +2,8 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Valve.VR.Extras
-{
-    public class SteamVR_LaserPointer : MonoBehaviour
-    {
+namespace Valve.VR.Extras {
+    public class SteamVR_LaserPointer : MonoBehaviour {
         public SteamVR_Behaviour_Pose pose;
 
         //public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.__actions_default_in_InteractUI;
@@ -27,8 +25,7 @@ namespace Valve.VR.Extras
         Transform previousContact = null;
 
 
-        private void Start()
-        {
+        private void Start() {
             if (pose == null)
                 pose = this.GetComponent<SteamVR_Behaviour_Pose>();
             if (pose == null)
@@ -49,19 +46,15 @@ namespace Valve.VR.Extras
             pointer.transform.localPosition = new Vector3(0f, 0f, 50f);
             pointer.transform.localRotation = Quaternion.identity;
             BoxCollider collider = pointer.GetComponent<BoxCollider>();
-            if (addRigidBody)
-            {
-                if (collider)
-                {
+            if (addRigidBody) {
+                if (collider) {
                     collider.isTrigger = true;
                 }
                 Rigidbody rigidBody = pointer.AddComponent<Rigidbody>();
                 rigidBody.isKinematic = true;
             }
-            else
-            {
-                if (collider)
-                {
+            else {
+                if (collider) {
                     Object.Destroy(collider);
                 }
             }
@@ -70,29 +63,24 @@ namespace Valve.VR.Extras
             pointer.GetComponent<MeshRenderer>().material = newMaterial;
         }
 
-        public virtual void OnPointerIn(PointerEventArgs e)
-        {
+        public virtual void OnPointerIn(PointerEventArgs e) {
             if (PointerIn != null)
                 PointerIn(this, e);
         }
 
-        public virtual void OnPointerClick(PointerEventArgs e)
-        {
+        public virtual void OnPointerClick(PointerEventArgs e) {
             if (PointerClick != null)
                 PointerClick(this, e);
         }
 
-        public virtual void OnPointerOut(PointerEventArgs e)
-        {
+        public virtual void OnPointerOut(PointerEventArgs e) {
             if (PointerOut != null)
                 PointerOut(this, e);
         }
 
 
-        private void Update()
-        {
-            if (!isActive)
-            {
+        private void Update() {
+            if (!isActive) {
                 isActive = true;
                 this.transform.GetChild(0).gameObject.SetActive(true);
             }
@@ -103,8 +91,7 @@ namespace Valve.VR.Extras
             RaycastHit hit;
             bool bHit = Physics.Raycast(raycast, out hit);
 
-            if (previousContact && previousContact != hit.transform)
-            {
+            if (previousContact && previousContact != hit.transform) {
                 PointerEventArgs args = new PointerEventArgs();
                 args.fromInputSource = pose.inputSource;
                 args.distance = 0f;
@@ -113,8 +100,7 @@ namespace Valve.VR.Extras
                 OnPointerOut(args);
                 previousContact = null;
             }
-            if (bHit && previousContact != hit.transform)
-            {
+            if (bHit && previousContact != hit.transform) {
                 PointerEventArgs argsIn = new PointerEventArgs();
                 argsIn.fromInputSource = pose.inputSource;
                 argsIn.distance = hit.distance;
@@ -123,17 +109,14 @@ namespace Valve.VR.Extras
                 OnPointerIn(argsIn);
                 previousContact = hit.transform;
             }
-            if (!bHit)
-            {
+            if (!bHit) {
                 previousContact = null;
             }
-            if (bHit && hit.distance < 100f)
-            {
+            if (bHit && hit.distance < 100f) {
                 dist = hit.distance;
             }
 
-            if (bHit && interactWithUI.GetStateUp(pose.inputSource))
-            {
+            if (bHit && interactWithUI.GetStateUp(pose.inputSource)) {
                 PointerEventArgs argsClick = new PointerEventArgs();
                 argsClick.fromInputSource = pose.inputSource;
                 argsClick.distance = hit.distance;
@@ -142,13 +125,11 @@ namespace Valve.VR.Extras
                 OnPointerClick(argsClick);
             }
 
-            if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
-            {
+            if (interactWithUI != null && interactWithUI.GetState(pose.inputSource)) {
                 pointer.transform.localScale = new Vector3(thickness * 5f, thickness * 5f, dist);
                 pointer.GetComponent<MeshRenderer>().material.color = clickColor;
             }
-            else
-            {
+            else {
                 pointer.transform.localScale = new Vector3(thickness, thickness, dist);
                 pointer.GetComponent<MeshRenderer>().material.color = color;
             }
@@ -156,8 +137,7 @@ namespace Valve.VR.Extras
         }
     }
 
-    public struct PointerEventArgs
-    {
+    public struct PointerEventArgs {
         public SteamVR_Input_Sources fromInputSource;
         public uint flags;
         public float distance;

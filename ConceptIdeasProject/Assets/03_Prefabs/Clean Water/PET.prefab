@@ -2789,7 +2789,7 @@ GameObject:
   - component: {fileID: 4910908810644070449}
   m_Layer: 0
   m_Name: PET
-  m_TagString: Untagged
+  m_TagString: Plastic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3061,7 +3061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _motor: {fileID: 588821517231097538}
-  _maxPower: 0.75
+  _maxPower: 1
   _minPower: 0.5
 --- !u!114 &4910908810644070448
 MonoBehaviour:

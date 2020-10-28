@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine.Animations;
 
 public class PlasticWasteManager : MonoBehaviour {
 
@@ -16,11 +13,8 @@ public class PlasticWasteManager : MonoBehaviour {
     //public Rigidbody _rigidbody;
 
     void Start() {
-        _plasticText = GetComponentInChildren<TextMeshProUGUI>();
         _plasticAnimator = GetComponentInChildren<Animator>();
-
-        _plasticCount = 3;
-
+        
         SetPlasticCountText();
 
         _plasticAnimator.SetBool("IsFull", false);
