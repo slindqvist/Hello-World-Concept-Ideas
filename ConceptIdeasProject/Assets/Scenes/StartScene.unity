@@ -1388,7 +1388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bc04c4aa7681445a281b35773f1063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _laserPointer: {fileID: 2010362267}
+  _hand: 2
+  _laserPointer: {fileID: 2010362270}
   _rensaVattnetPlaceHolder: {fileID: 348395369}
 --- !u!4 &401515962
 Transform:
@@ -5767,7 +5768,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 195326586}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2010362267
+--- !u!114 &2010362270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
