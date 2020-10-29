@@ -12,6 +12,8 @@ public class SceneHandler : MonoBehaviour {
     public SteamVR_LaserPointer _laserPointer;
     public GameObject _rensaVattnetPlaceHolder,
                       _bokhyllanPlaceHolder;
+    public AudioSource _buttonBokhyllan,
+                        _buttonRensaVattnet;
 
     private void Awake() {
         _laserPointer.PointerIn += PointerInside;
@@ -24,10 +26,16 @@ public class SceneHandler : MonoBehaviour {
     public void PointerClick(object sender, PointerEventArgs e) {
         if (e.target.name == "RensaVattnet") {
             _rensaVattnetPlaceHolder.SetActive(true);
+            if (!_buttonRensaVattnet.isPlaying) {
+                _buttonRensaVattnet.Play();
+            }
             Debug.Log("Rensa vattnet was clicked");
         }
         else if (e.target.name == "Bokhyllan") {
             _bokhyllanPlaceHolder.SetActive(true);
+            if (_buttonBokhyllan.isPlaying) {
+                _buttonBokhyllan.Play();
+            }
             Debug.Log("Bokhyllan was clicked");
         }
     }
