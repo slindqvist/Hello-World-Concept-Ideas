@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1975272752}
-  m_IndirectSpecularColor: {r: 0.19575879, g: 0.23707302, b: 0.31061593, a: 1}
+  m_IndirectSpecularColor: {r: 0.19609106, g: 0.23714736, b: 0.31157455, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9632,7 +9632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _plasticText: {fileID: 1755360362}
-  _plasticCount: 2
+  _plasticCount: 4
 --- !u!54 &1109569189161148346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9825,7 +9825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _metalText: {fileID: 1455969627}
-  _metalCount: 2
+  _metalCount: 3
 --- !u!54 &3049558370733956933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10144,7 +10144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _electronicText: {fileID: 889737327}
-  _electronicCount: 1
+  _electronicCount: 2
 --- !u!54 &4446549334690333958
 Rigidbody:
   m_ObjectHideFlags: 0

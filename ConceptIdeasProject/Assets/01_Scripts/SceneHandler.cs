@@ -13,7 +13,7 @@ public class SceneHandler : MonoBehaviour {
     public GameObject _rensaVattnetPlaceHolder,
                       _bokhyllanPlaceHolder;
     public AudioSource _buttonBokhyllan,
-                        _buttonRensaVattnet;
+                       _buttonRensaVattnet;
 
     private void Awake() {
         _laserPointer.PointerIn += PointerInside;
@@ -33,7 +33,7 @@ public class SceneHandler : MonoBehaviour {
         }
         else if (e.target.name == "Bokhyllan") {
             _bokhyllanPlaceHolder.SetActive(true);
-            if (_buttonBokhyllan.isPlaying) {
+            if (!_buttonBokhyllan.isPlaying) {
                 _buttonBokhyllan.Play();
             }
             Debug.Log("Bokhyllan was clicked");
