@@ -10,6 +10,9 @@ public class Mål03 : MonoBehaviour
     public Renderer _cube03;
     public GameObject _collider03;
     public GameObject _light03;
+    public GameObject _image03;
+    public AudioSource _scoreSound;
+    public AudioSource _knaggleSound;
 
     public Transform _transformCube03;
     public Transform _respawnPoint;
@@ -20,8 +23,15 @@ public class Mål03 : MonoBehaviour
         {
             if (other.gameObject.tag == "Mål03")
             {
+
+                if (!_scoreSound.isPlaying)
+                {
+                    _scoreSound.Play();
+                }
+
                 _cube03.material.color = _changeToMaterial.color;
                 _collider03.SetActive(false);
+                _image03.SetActive(true);
 
                 if (_cubeOnRightPlace != null)
                 {
@@ -33,6 +43,12 @@ public class Mål03 : MonoBehaviour
         if (other.CompareTag("RespawnArea"))
         {
             _transformCube03.transform.position = _respawnPoint.transform.position;
+
+            if (!_knaggleSound.isPlaying)
+            {
+                _knaggleSound.Play();
+            }
+
 
         }
     }

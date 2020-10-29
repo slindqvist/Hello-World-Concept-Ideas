@@ -12,8 +12,7 @@ public class LigthRandom : MonoBehaviour
     public List<GameObject> _lightsList = new List<GameObject>();
     private int _lightNumber;
     
-   // public GameObject _lastLight;
-   // public GameObject _logoCube;
+   
 
    
     
@@ -24,16 +23,14 @@ public class LigthRandom : MonoBehaviour
         
         
         _lightsList[_lightNumber].SetActive(true);
-       // _lastLight.SetActive(false);
-       // _logoCube.SetActive(false);
+       
     }
 
     public void Update()
     {
         if (_lightsList.Count == 0)
         {
-           // _lastLight.SetActive(true);
-           // _logoCube.SetActive(true);
+           
 
            // Fyverkerier och du har vunnit :) 
         }
