@@ -19,6 +19,8 @@ public class Timer : MonoBehaviour {
     public GameObject _placeHolder;
     public float waitTime = 10f;
 
+    public AudioSource _tickingSound;
+
     public void Start() {
         StartCoroutine(FloorPanelOff());
         Shuffle(_floorPlateList);
@@ -37,7 +39,10 @@ public class Timer : MonoBehaviour {
 
         _timerText.text = _minutes.ToString() + ":" + _seconds.ToString();
 
-        if (_minutes == 0 && _seconds == 10) {
+        if (_minutes == 0 && _seconds == 20) {
+            if (!_tickingSound.isPlaying) {
+                _tickingSound.Play();
+            }
             _timerText.color = Color.red;
         }
 

@@ -2619,7 +2619,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 120
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -9632,7 +9632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _plasticText: {fileID: 1755360362}
-  _plasticCount: 4
+  _plasticCount: 3
 --- !u!54 &1109569189161148346
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9825,7 +9825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _metalText: {fileID: 1455969627}
-  _metalCount: 3
+  _metalCount: 2
 --- !u!54 &3049558370733956933
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10144,7 +10144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _electronicText: {fileID: 889737327}
-  _electronicCount: 2
+  _electronicCount: 1
 --- !u!54 &4446549334690333958
 Rigidbody:
   m_ObjectHideFlags: 0

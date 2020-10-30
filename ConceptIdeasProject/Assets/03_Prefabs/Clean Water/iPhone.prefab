@@ -3237,7 +3237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _motor: {fileID: 511381768586705601}
   _maxPower: 1
-  _minPower: 0.5
+  _minPower: 0.75
 --- !u!114 &8374766851490661570
 MonoBehaviour:
   m_ObjectHideFlags: 0
