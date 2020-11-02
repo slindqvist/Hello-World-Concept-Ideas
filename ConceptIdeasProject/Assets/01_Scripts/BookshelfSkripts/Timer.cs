@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour {
     public List<GameObject> _floorPlateList = new List<GameObject>();
     public GameObject _lastFloorPlate;
     public GameObject _bokShelf;
-    public Animation _floorAnimation;
+    public Animator _floorAnimation;
 
     public float _totalTime;
     private float _minutes;
@@ -20,6 +20,8 @@ public class Timer : MonoBehaviour {
     public float waitTime = 10f;
 
     public AudioSource _tickingSound;
+
+    private bool _rotating;
 
     public void Start() {
         StartCoroutine(FloorPanelOff());
@@ -63,7 +65,32 @@ public class Timer : MonoBehaviour {
 
         for (int i = 0; i < _floorPlateList.Count; i--) {
 
+            
             yield return new WaitForSeconds(15f);
+            Debug.Log("Play Animation" + _floorPlateList[i].ToString());
+
+            _rotating = true;
+            Quaternion startRotation = _floorPlateList[i].transform.rotation;
+            Quaternion endRotation = Quaternion.Euler(30, 0, 30) * startRotation;
+
+
+            float counter = 0f;
+            while (counter < 1f)
+            {
+                counter += Time.deltaTime / 15f;
+                _floorPlateList[i].transform.rotation = Quaternion.Lerp(startRotation, endRotation, counter);
+                yield return null;
+            }
+            
+               
+            
+
+            _floorPlateList[i].transform.rotation = endRotation;
+            _rotating = false;
+
+
+
+            yield return new WaitForSeconds(0f);
             _floorPlateList[i].GetComponent<Rigidbody>().isKinematic = false;
             _floorPlateList[i].GetComponent<Rigidbody>().useGravity = true;
             _floorPlateList.RemoveAt(i);
@@ -72,6 +99,35 @@ public class Timer : MonoBehaviour {
 
         }
     }
+
+  /*  private IEnumerator Rotate( Vector3 angels, float duration)
+    {
+        for (int i = 0; i < _floorPlateList.Count; i++)
+        {
+            _rotating = true;
+            Quaternion startRotation = _floorPlateList[i].transform.rotation;
+            Quaternion endRotation = Quaternion.Euler(angels) * startRotation;
+
+            for (float t = 0; t < duration; t+= Time.deltaTime) 
+            {
+                _floorPlateList[i].transform.rotation = Quaternion.Lerp(startRotation, endRotation, t / duration);
+                yield return null;
+            }
+
+            _floorPlateList[i].transform.rotation = endRotation;
+            _rotating = false;
+
+        }
+
+       
+
+    }
+
+    public void StartRotation()
+    {
+        if (!_rotating)
+            StartCoroutine(Rotate(new Vector3(15, 0, 0), 1));
+    } */
 
 
     public void Shuffle<T>(IList<T> list) {
