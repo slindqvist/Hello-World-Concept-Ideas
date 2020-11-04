@@ -16,8 +16,6 @@ public class HighscoreTable : MonoBehaviour {
 
         _entryTemplate.gameObject.SetActive(false);
 
-        //AddHighscoreEntry(1000000, "CMK");
-
         string jsonString = PlayerPrefs.GetString("HighscoreTable");
         Highscores highscores = JsonUtility.FromJson<Highscores>(jsonString);
 
@@ -72,7 +70,16 @@ public class HighscoreTable : MonoBehaviour {
         string name = highscoreEntry._name;
         entryTransform.Find("NameText").GetComponent<TextMeshProUGUI>().text = name;
 
+        // Set background visible odds and evens
         entryTransform.Find("BackgroundText").gameObject.SetActive(rank % 2 == 1);
+
+        // Highlight First
+        if (rank == 1) {
+            entryTransform.Find("PosText").GetComponent<TextMeshProUGUI>().color = Color.green;
+            entryTransform.Find("ScoreText").GetComponent<TextMeshProUGUI>().color = Color.green;
+            entryTransform.Find("NameText").GetComponent<TextMeshProUGUI>().color = Color.green;
+        }
+
         transformList.Add(entryTransform);
     }
 
@@ -87,7 +94,7 @@ public class HighscoreTable : MonoBehaviour {
         // Add new entry to Highscores
         highscores.highscoreEntryList.Add(highscoreEntry);
 
-        // Save updated Highscores
+        //Save updated Highscores
         string json = JsonUtility.ToJson(highscores);
         PlayerPrefs.SetString("HighscoreTable", json);
         PlayerPrefs.Save();
