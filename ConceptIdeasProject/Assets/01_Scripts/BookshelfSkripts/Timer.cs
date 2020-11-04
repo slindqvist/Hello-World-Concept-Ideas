@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour {
     public List<GameObject> _floorPlateList = new List<GameObject>();
     public GameObject _lastFloorPlate;
     public GameObject _bokShelf;
-    public Animation _floorAnimation;
+    public Animator _floorAnimation;
 
     public float _totalTime;
     private float _minutes;
@@ -20,18 +20,21 @@ public class Timer : MonoBehaviour {
     public float waitTime = 10f;
 
     public AudioSource _tickingSound;
-
-    public void Start() {
+    
+    public void Start() 
+    {
         StartCoroutine(FloorPanelOff());
         Shuffle(_floorPlateList);
         _gameOverText.enabled = false;
     }
 
-    public void Update() {
+    public void Update() 
+    {
         CountDownTimer();
     }
 
-    public void CountDownTimer() {
+    public void CountDownTimer() 
+    {
         _totalTime -= Time.deltaTime;
 
         _minutes = (int)(_totalTime / 60);
@@ -39,31 +42,52 @@ public class Timer : MonoBehaviour {
 
         _timerText.text = _minutes.ToString() + ":" + _seconds.ToString();
 
-        if (_minutes == 0 && _seconds == 20) {
-            if (!_tickingSound.isPlaying) {
+        if (_minutes == 0 && _seconds == 20) 
+        {
+            if (!_tickingSound.isPlaying) 
+            {
                 _tickingSound.Play();
             }
+            
             _timerText.color = Color.red;
         }
 
-        if (_minutes == 0 && _seconds == 0) {
+        if (_minutes == 0 && _seconds == 0) 
+        {
 
             _timerText.enabled = false;
             _gameOverText.enabled = true;
-            // _lastFloorPlate.SetActive(false);
+            
             _lastFloorPlate.GetComponent<Rigidbody>().isKinematic = false;
             _bokShelf.GetComponent<MeshCollider>().convex = true;
             _bokShelf.GetComponent<Rigidbody>().isKinematic = false;
             _bokShelf.GetComponent<Rigidbody>().useGravity = true;
+            
             StartCoroutine("GameOverCoroutine");
         }
     }
+    public IEnumerator FloorPanelOff() 
+    {
+        for (int i = 0; i < _floorPlateList.Count; i--) 
+        {
+            
+            yield return new WaitForSeconds(10f);
+            Debug.Log("Play Animation" + _floorPlateList[i].ToString());
 
-    public IEnumerator FloorPanelOff() {
+            Quaternion startRotation = _floorPlateList[i].transform.rotation;
+            Quaternion endRotation = Quaternion.Euler(15, 0, 15) * startRotation;
 
-        for (int i = 0; i < _floorPlateList.Count; i--) {
-
-            yield return new WaitForSeconds(15f);
+            float counter = 0f;
+            while (counter < 1f)
+            {
+                counter += Time.deltaTime / 5f;
+                _floorPlateList[i].transform.rotation = Quaternion.Lerp(startRotation, endRotation, counter);
+                yield return null;
+            }
+            
+            _floorPlateList[i].transform.rotation = endRotation;
+          
+            yield return new WaitForSeconds(0f);
             _floorPlateList[i].GetComponent<Rigidbody>().isKinematic = false;
             _floorPlateList[i].GetComponent<Rigidbody>().useGravity = true;
             _floorPlateList.RemoveAt(i);
@@ -72,9 +96,9 @@ public class Timer : MonoBehaviour {
 
         }
     }
-
-
-    public void Shuffle<T>(IList<T> list) {
+  
+    public void Shuffle<T>(IList<T> list) 
+    {
         System.Random random = new System.Random();
         int n = list.Count;
         while (n > 1) {
@@ -86,11 +110,28 @@ public class Timer : MonoBehaviour {
         }
     }
 
-    public IEnumerator GameOverCoroutine() {
+    public IEnumerator GameOverCoroutine() 
+    {
         yield return new WaitForSeconds(waitTime);
         _placeHolder.SetActive(true);
     }
 }
+
+
+    
+
+
+
+               
+            
+
+            
+         
+
+
+
+
+
 
 
 
