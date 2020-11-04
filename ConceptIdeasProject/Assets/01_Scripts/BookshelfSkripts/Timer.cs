@@ -73,6 +73,8 @@ public class Timer : MonoBehaviour {
             
             yield return new WaitForSeconds(10f);
             Debug.Log("Play Animation" + _floorPlateList[i].ToString());
+            
+            _floorPlateList[i].GetComponent<AudioSource>().Play();
 
             Quaternion startRotation = _floorPlateList[i].transform.rotation;
             Quaternion endRotation = Quaternion.Euler(15, 0, 15) * startRotation;
