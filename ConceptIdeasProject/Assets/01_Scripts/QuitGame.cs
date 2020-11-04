@@ -9,4 +9,9 @@ public class QuitGame : MonoBehaviour
             Application.Quit();
         }
     }
+
+    public void EndGame() {
+        Application.Quit();
+        Debug.Log("Quitting game");
+    }
 }

@@ -11,15 +11,15 @@ public class Highscores : MonoBehaviour {
 
     DisplayHighscores _highscoresDisplay;
     public Highscore[] _highscoresList;
-    //static Highscores instance;
+    static Highscores instance;
 
     private void Awake() {
         _highscoresDisplay = GetComponent<DisplayHighscores>();
-        //instance = this;
+        instance = this;
     }
 
     public void AddNewHighscore(string username, int score) {
-        StartCoroutine(UploadNewHighscore(username, score));
+        instance.StartCoroutine(instance.UploadNewHighscore(username, score));
     }
 
     IEnumerator UploadNewHighscore(string username, int score) {
