@@ -11,34 +11,27 @@ public class LigthRandom : MonoBehaviour
     
     public List<GameObject> _lightsList = new List<GameObject>();
     private int _lightNumber;
-    
-   
 
-   
-    
+    public Text _countText;
     
     public void Start()
     {
         Shuffle(_lightsList);
         
-        
         _lightsList[_lightNumber].SetActive(true);
-       
     }
-
+        
     public void Update()
     {
         if (_lightsList.Count == 0)
         {
            
-
+            
            // Fyverkerier och du har vunnit :) 
         }
-       
+
+        Counting();
     }
-    
-    
-  
     
     public void RandomLights()
     {
@@ -50,9 +43,14 @@ public class LigthRandom : MonoBehaviour
 
             _lightsList[_lightNumber].SetActive(true);
         }
+        
     }
 
-   
+    public void Counting()
+    {
+        _countText.text = _lightsList.Count.ToString();
+    }
+
     public void Shuffle<T>(IList<T> list)
     {
         System.Random random = new System.Random();
@@ -68,6 +66,21 @@ public class LigthRandom : MonoBehaviour
     }
 }
        
+       
+        
+       
+       
+
+    
+  
+   
+
+   
+    
+    
+    
+
+   
     
        
 

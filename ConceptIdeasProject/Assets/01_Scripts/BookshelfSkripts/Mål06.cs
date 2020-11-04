@@ -32,6 +32,8 @@ public class Mål06 : MonoBehaviour
                 _collider06.SetActive(false);
                 _image06.SetActive(true);
 
+                Score._score += 10;
+
                 if (_cubeOnRightPlace != null)
                 {
                     _cubeOnRightPlace.Invoke();
