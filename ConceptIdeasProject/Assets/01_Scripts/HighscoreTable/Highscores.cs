@@ -55,7 +55,7 @@ public class Highscores : MonoBehaviour {
     }
 
     private void FormatHighscores(string textStream) {
-        string[] entries = textStream.Split(new char[] { '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+        string[] entries = textStream.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
         _highscoresList = new Highscore[entries.Length];
 
         for (int i = 0; i < entries.Length; i++) {

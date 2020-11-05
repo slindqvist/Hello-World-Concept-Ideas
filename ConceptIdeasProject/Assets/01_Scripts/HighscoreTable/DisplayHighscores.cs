@@ -31,6 +31,7 @@ public class DisplayHighscores : MonoBehaviour
     IEnumerator RefreshHighscores() {
         while (true) {
             _highscoresManager.DownloadHighscores();
-            yield return new WaitForSeconds(30);        }
+            yield return new WaitForSeconds(30);
+        }
     }
 }

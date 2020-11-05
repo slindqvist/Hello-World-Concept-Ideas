@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour {
     private ElectronicWasteManager _electronicManager;
     private WasteSpawner _wasteSpawner;
     private WinSceneAnimControl _winSceneAnimControl;
+    private Highscores _highscores;
 
     public bool _firstLevelComplete;
     private float _score = 0f;
@@ -24,6 +25,7 @@ public class ScoreManager : MonoBehaviour {
         _electronicManager = FindObjectOfType<ElectronicWasteManager>();
         _wasteSpawner = FindObjectOfType<WasteSpawner>();
         _winSceneAnimControl = FindObjectOfType<WinSceneAnimControl>();
+        _highscores = FindObjectOfType<Highscores>();
 
         _firstLevelComplete = false;
 
@@ -39,6 +41,7 @@ public class ScoreManager : MonoBehaviour {
                         _wasteSpawner.StopSpawnWaste();
                         _winSceneAnimControl.PlayWinScene();
                         _firstLevelComplete = true;
+                        StartCoroutine("GameOverCoroutine");
                         Debug.Log("Level 1 Complete");
                     }
                 }
@@ -57,7 +60,9 @@ public class ScoreManager : MonoBehaviour {
     }
 
     public IEnumerator GameOverCoroutine() {
+        _highscores.AddNewHighscore("Spelare", _points);
         yield return new WaitForSeconds(waitTime);
         _placeHolder.SetActive(true);
+        Debug.Log("Returning to Start scene...");
     }
 }

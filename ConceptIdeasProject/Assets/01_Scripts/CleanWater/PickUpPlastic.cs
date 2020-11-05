@@ -5,7 +5,7 @@ public class PickUpPlastic : MonoBehaviour {
     ScoreManager _scoreManager;
     AudioManager _audioManager;
 
-    private int _recycleValue = 1;
+    public int _recycleValue = 2;
 
     private void Start() {
         _plasticWasteManager = FindObjectOfType<PlasticWasteManager>();

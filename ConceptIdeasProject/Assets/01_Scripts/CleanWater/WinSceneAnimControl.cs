@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class WinSceneAnimControl : MonoBehaviour
 {
-    ScoreManager _scoreManager;
-
     public AudioSource _icePlatform01,
                        _icePlatform02,
                        _icePlatform03,
@@ -16,7 +14,6 @@ public class WinSceneAnimControl : MonoBehaviour
     void Start()
     {
         _icePlatformAnimator = GetComponent<Animator>();
-        _scoreManager = FindObjectOfType<ScoreManager>();
         _icePlatformAnimator.SetBool("HasWon", false);
     }
 
@@ -28,7 +25,6 @@ public class WinSceneAnimControl : MonoBehaviour
             _icePlatform02.Play();
             _icePlatform03.Play();
             _icePlatform04.Play();
-            _scoreManager.StartCoroutine("GameOverCoroutine");
         }
     }
 }

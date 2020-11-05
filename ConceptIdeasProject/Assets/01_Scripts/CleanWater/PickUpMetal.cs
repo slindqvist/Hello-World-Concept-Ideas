@@ -6,7 +6,7 @@ public class PickUpMetal : MonoBehaviour
     ScoreManager _scoreManager;
     AudioManager _audioManager;
 
-    private int _recycleValue = 1;
+    public int _recycleValue = 2;
 
     private void Start() {
         _metalWasteManager = FindObjectOfType<MetalWasteManager>();
