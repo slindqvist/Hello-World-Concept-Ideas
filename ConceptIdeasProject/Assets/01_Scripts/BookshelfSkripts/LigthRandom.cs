@@ -50,7 +50,7 @@ public class LigthRandom : MonoBehaviour
     {
         _countText.text = _lightsList.Count.ToString();
     }
-
+    
     public void Shuffle<T>(IList<T> list)
     {
         System.Random random = new System.Random();

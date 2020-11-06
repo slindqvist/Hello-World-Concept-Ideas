@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
+    private BookshelfHighscores _bookshelfHighscores;
+
     public List<GameObject> _floorPlateList = new List<GameObject>();
     public GameObject _lastFloorPlate;
     public GameObject _bokShelf;
@@ -23,6 +25,8 @@ public class Timer : MonoBehaviour {
     
     public void Start() 
     {
+        _bookshelfHighscores = FindObjectOfType<BookshelfHighscores>();
+
         StartCoroutine(FloorPanelOff());
         Shuffle(_floorPlateList);
         _gameOverText.enabled = false;
@@ -114,8 +118,10 @@ public class Timer : MonoBehaviour {
 
     public IEnumerator GameOverCoroutine() 
     {
+
         yield return new WaitForSeconds(waitTime);
         _placeHolder.SetActive(true);
+        Debug.Log("Returning to start scene...");
     }
 }
 
