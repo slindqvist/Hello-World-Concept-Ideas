@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour {
     private ElectronicWasteManager _electronicManager;
     private WasteSpawner _wasteSpawner;
     private WinSceneAnimControl _winSceneAnimControl;
+    private CleanWaterTimer _cleanWaterTimer;
     private Highscores _highscores;
 
     public bool _firstLevelComplete;
@@ -19,18 +20,34 @@ public class ScoreManager : MonoBehaviour {
     public GameObject _placeHolder;
     public float waitTime = 10f;
 
+    // Score based on timer
+    private float _timeElapsed;
+    private float _maxTime = 180;
+    private float _bonusScore = 1;
+    private float _timerScore;
+
+    // Username
+    private string username = "";
+    public TextMeshProUGUI _usernameText;
+
+    private int _totScore;
+
     void Start() {
         _plasticManager = FindObjectOfType<PlasticWasteManager>();
         _metalManager = FindObjectOfType<MetalWasteManager>();
         _electronicManager = FindObjectOfType<ElectronicWasteManager>();
         _wasteSpawner = FindObjectOfType<WasteSpawner>();
         _winSceneAnimControl = FindObjectOfType<WinSceneAnimControl>();
+        _cleanWaterTimer = FindObjectOfType<CleanWaterTimer>();
         _highscores = FindObjectOfType<Highscores>();
 
         _firstLevelComplete = false;
+        _cleanWaterTimer._timerIsRunning = true;
 
         _points = 0;
         _scoreboardText.text = "Bonus: " + _points + "p";
+
+        GenerateUsername();
     }
 
     void Update() {
@@ -38,6 +55,8 @@ public class ScoreManager : MonoBehaviour {
             if (_plasticManager._plasticCount == _score) {
                 if (_metalManager._metalCount == _score) {
                     if (_electronicManager._electronicCount == _score) {
+                        _cleanWaterTimer._timerIsRunning = false;
+                        AssignBonusPoints();
                         _wasteSpawner.StopSpawnWaste();
                         _winSceneAnimControl.PlayWinScene();
                         _firstLevelComplete = true;
@@ -47,6 +66,12 @@ public class ScoreManager : MonoBehaviour {
                 }
             }
         }
+    }
+
+    private void AssignBonusPoints() {
+        _timerScore = Mathf.Max(0, _maxTime - _timeElapsed) * _bonusScore;
+        _totScore = _points + (int)_timerScore;
+        Debug.Log("Bonus " + _timerScore);
     }
 
     public void AddPointsToScoreboard(int amount) {
@@ -59,8 +84,18 @@ public class ScoreManager : MonoBehaviour {
         _scoreboardText.text = "Bonus: " + _points + "p";
     }
 
+    public void GenerateUsername() {
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        for (int i = 0; i < 3; i++) {
+            username += alphabet[Random.Range(0, alphabet.Length)];
+        }
+
+        _usernameText.text = username;
+    } 
+
     public IEnumerator GameOverCoroutine() {
-        _highscores.AddNewHighscore("Spelare", _points);
+        _highscores.AddNewHighscore(username, _totScore);
         yield return new WaitForSeconds(waitTime);
         _placeHolder.SetActive(true);
         Debug.Log("Returning to Start scene...");

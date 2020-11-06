@@ -12,7 +12,7 @@ public class CleanWaterTimer : MonoBehaviour
     public TextMeshProUGUI _gameOverText;
     public float _timeRemaining = 180f;
 
-    private bool _timerIsRunning;
+    public bool _timerIsRunning;
     private bool _gameOver;
 
     void Start()
