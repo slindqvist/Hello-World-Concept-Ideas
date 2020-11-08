@@ -5,11 +5,12 @@ using UnityEngine.Networking;
 
 public class QuitGame : MonoBehaviour
 {
-    const string _clearWebURL = "http://dreamlo.com/lb/Bnh5F_gCikq52sWu6dBb-wgeQxiAC_ske6vpn5_YjjAA/clear";
+    const string _clearCleanWaterWebURL = "http://dreamlo.com/lb/Bnh5F_gCikq52sWu6dBb-wgeQxiAC_ske6vpn5_YjjAA/clear";
+    const string _clearBookshelfWebURL = "http://dreamlo.com/lb/CT27V4-jn0WBtQtf_MYBxwcO5fU2yHCUOm89oRnC1r6A/clear";
 
     private void Update() {
         if (Input.GetKey(KeyCode.Space)) {
-            StartCoroutine(ClearCleanWaterHighscores(_clearWebURL));
+            StartCoroutine(ClearCleanWaterHighscores(_clearCleanWaterWebURL));
         }
 
         if (Input.GetKey(KeyCode.Escape)) {
@@ -18,6 +19,12 @@ public class QuitGame : MonoBehaviour
     }
 
     private IEnumerator ClearCleanWaterHighscores(string uri) {
+        using (UnityWebRequest www = UnityWebRequest.Get(uri)) {
+            yield return www.SendWebRequest();
+        }
+    }
+
+    private IEnumerator ClearBookshelfHighscores(string uri) {
         using (UnityWebRequest www = UnityWebRequest.Get(uri)) {
             yield return www.SendWebRequest();
         }

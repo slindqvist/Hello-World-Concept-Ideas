@@ -7,7 +7,8 @@ using UnityEngine.Events;
 
 public class LigthRandom : MonoBehaviour
 {
-   
+    Score _scoreManager;
+    Timer _timerManager;
     
     public List<GameObject> _lightsList = new List<GameObject>();
     private int _lightNumber;
@@ -16,6 +17,9 @@ public class LigthRandom : MonoBehaviour
     
     public void Start()
     {
+        _scoreManager = FindObjectOfType<Score>();
+        _timerManager = FindObjectOfType<Timer>();
+
         Shuffle(_lightsList);
         
         _lightsList[_lightNumber].SetActive(true);
@@ -25,8 +29,9 @@ public class LigthRandom : MonoBehaviour
     {
         if (_lightsList.Count == 0)
         {
-           
-            
+
+            _scoreManager.AssigBonusPoints();
+            _timerManager.StartCoroutine("GameOverCoroutine");
            // Fyverkerier och du har vunnit :) 
         }
 

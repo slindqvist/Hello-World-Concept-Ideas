@@ -92,7 +92,7 @@ public class ScoreManager : MonoBehaviour {
         }
 
         _usernameText.text = username;
-    } 
+    }
 
     public IEnumerator GameOverCoroutine() {
         _highscores.AddNewHighscore(username, _totScore);

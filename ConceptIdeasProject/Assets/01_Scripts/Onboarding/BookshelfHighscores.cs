@@ -5,12 +5,12 @@ using UnityEngine.Networking;
 using System;
 
 public class BookshelfHighscores : MonoBehaviour {
-    const string _privateCode = "CzUhDCFLVEW5lXTF6UOeDQcI190ftG1EayJjL";
-    const string _publicCode = "5fa5433aeb371a09c4a9cef6";
+    const string _privateCode = "CT27V4-jn0WBtQtf_MYBxwcO5fU2yHCUOm89oRnC1r6A";
+    const string _publicCode = "5fa84f0deb371a09c4c1e6f4";
     const string _webURL = "http://dreamlo.com/lb/";
 
     BookshelfHighscoresDisplay _bookshelfHighscoresDisplay;
-    public BookshelfHighscore[] _highscoresList;
+    public BookshelfHighscore[] _bookshelfHighscoreslist;
     static BookshelfHighscores instance;
 
     private void Awake() {
@@ -47,7 +47,7 @@ public class BookshelfHighscores : MonoBehaviour {
         if (string.IsNullOrEmpty(www.error)) {
             //print(www.downloadHandler.text);
             FormatHighscores(www.downloadHandler.text);
-            _bookshelfHighscoresDisplay.OnHighscoresDownloaded(_highscoresList);
+            _bookshelfHighscoresDisplay.OnHighscoresDownloaded(_bookshelfHighscoreslist);
         }
         else {
             print("Error downloading: " + www.error);
@@ -56,14 +56,14 @@ public class BookshelfHighscores : MonoBehaviour {
 
     private void FormatHighscores(string textStream) {
         string[] entries = textStream.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
-        _highscoresList = new BookshelfHighscore[entries.Length];
+        _bookshelfHighscoreslist = new BookshelfHighscore[entries.Length];
 
         for (int i = 0; i < entries.Length; i++) {
             string[] entryInfo = entries[i].Split(new char[] { '|' });
             string username = entryInfo[0];
             int score = int.Parse(entryInfo[1]);
-            _highscoresList[i] = new BookshelfHighscore(username, score);
-            print(_highscoresList[i].username + ": " + _highscoresList[i].score);
+            _bookshelfHighscoreslist[i] = new BookshelfHighscore(username, score);
+            //print(_bookshelfHighscoreslist[i].username + ": " + _bookshelfHighscoreslist[i].score);
         }
     }
 
