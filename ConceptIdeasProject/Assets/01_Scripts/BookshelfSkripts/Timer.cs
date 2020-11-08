@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour {
+    private BookshelfHighscores _bookshelfHighscores;
+    private Score _scoreManager;
+
     public List<GameObject> _floorPlateList = new List<GameObject>();
     public GameObject _lastFloorPlate;
     public GameObject _bokShelf;
@@ -20,9 +24,17 @@ public class Timer : MonoBehaviour {
     public float waitTime = 10f;
 
     public AudioSource _tickingSound;
-    
+
+    // Username
+    private string username = "";
+    public TextMeshProUGUI _usernameText;
+
     public void Start() 
     {
+        _bookshelfHighscores = FindObjectOfType<BookshelfHighscores>();
+        GenerateUsername();
+        _scoreManager = FindObjectOfType<Score>();
+
         StartCoroutine(FloorPanelOff());
         Shuffle(_floorPlateList);
         _gameOverText.enabled = false;
@@ -112,10 +124,22 @@ public class Timer : MonoBehaviour {
         }
     }
 
+    public void GenerateUsername() {
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        for (int i = 0; i < 3; i++) {
+            username += alphabet[Random.Range(0, alphabet.Length)];
+        }
+
+        _usernameText.text = username;
+    }
+
     public IEnumerator GameOverCoroutine() 
     {
+        _bookshelfHighscores.AddNewHighscore(username, _scoreManager._totScore);
         yield return new WaitForSeconds(waitTime);
         _placeHolder.SetActive(true);
+        Debug.Log("Returning to start scene...");
     }
 }
 
