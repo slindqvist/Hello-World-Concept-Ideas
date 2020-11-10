@@ -2,28 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Score : MonoBehaviour
 {
-    // Score based on timer
-    private float _timeElapsed;
-    private float _maxTime = 210;
-    private float _bonusScore = 1;
-    private float _timerScore;
-    public int _totScore;
+    private BookshelfHighscores _bookshelfHighscores;
 
-    public static int _score = 0;
+    public GameObject _placeHolder;
+    public float waitTime = 10f;
 
+    // Username
+    private string username = "";
+    public TextMeshProUGUI _usernameText;
+    
+    private int _score;
     public Text _scoreText;
 
-    public void Update()
-    {
+    private void Start() {
+        _bookshelfHighscores = FindObjectOfType<BookshelfHighscores>();
+
+        _score = 0;
+
+        GenerateUsername();
+    }
+
+    public void AddPointsToScoreboard(int amount) {
+        _score = _score + amount;
         _scoreText.text = _score.ToString();
     }
 
-    public void AssigBonusPoints() {
-        _timerScore = Mathf.Max(0, _maxTime - _timeElapsed) * _bonusScore;
-        _totScore = _score + (int)_timerScore;
-        Debug.Log("Bonus " + _timerScore);
+    public void GenerateUsername() {
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        for (int i = 0; i < 3; i++) {
+            username += alphabet[Random.Range(0, alphabet.Length)];
+        }
+        _usernameText.text = username;
+    }
+
+    public IEnumerator GameOverCoroutine() {
+        _bookshelfHighscores.AddNewHighscore(username, _score);
+        yield return new WaitForSeconds(waitTime);
+        _placeHolder.SetActive(true);
+        Debug.Log("Returning to start scene...");
     }
 }
