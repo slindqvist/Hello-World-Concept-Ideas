@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    Timer _timer;
+    Score _scoreManager;
 
     public void Start()
     {
-        _timer = FindObjectOfType<Timer>();
+        _scoreManager = FindObjectOfType<Score>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            _timer.StartCoroutine("GameOverCoroutine");
+            _scoreManager.StartCoroutine("GameOverCoroutine");
             Debug.Log("GameOver");
         } 
     }

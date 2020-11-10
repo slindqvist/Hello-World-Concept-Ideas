@@ -9,12 +9,10 @@ public class QuitGame : MonoBehaviour
     const string _clearBookshelfWebURL = "http://dreamlo.com/lb/CT27V4-jn0WBtQtf_MYBxwcO5fU2yHCUOm89oRnC1r6A/clear";
 
     private void Update() {
-        if (Input.GetKey(KeyCode.Space)) {
-            StartCoroutine(ClearCleanWaterHighscores(_clearCleanWaterWebURL));
-        }
-
         if (Input.GetKey(KeyCode.Escape)) {
             Application.Quit();
+            StartCoroutine(ClearCleanWaterHighscores(_clearCleanWaterWebURL));
+            StartCoroutine(ClearBookshelfHighscores(_clearBookshelfWebURL));
         }
     }
 

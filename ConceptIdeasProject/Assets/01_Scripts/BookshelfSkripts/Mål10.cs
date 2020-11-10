@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 public class Mål10 : MonoBehaviour
 {
+    private Score _scoreManager;
+    public int _points = 10;
+
     public UnityEvent _cubeOnRightPlace;
     public Material _changeToMaterial;
     public Renderer _cube10;
@@ -16,6 +19,10 @@ public class Mål10 : MonoBehaviour
 
     public Transform _transformCube10;
     public Transform _respawnPoint;
+
+    private void Start() {
+        _scoreManager = FindObjectOfType<Score>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,7 +39,7 @@ public class Mål10 : MonoBehaviour
                 _collider10.SetActive(false);
                 _image10.SetActive(true);
 
-                Score._score += 10;
+                _scoreManager.AddPointsToScoreboard(_points);
 
                 if (_cubeOnRightPlace != null)
                 {

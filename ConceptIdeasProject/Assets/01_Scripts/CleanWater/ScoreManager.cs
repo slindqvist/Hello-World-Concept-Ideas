@@ -22,7 +22,7 @@ public class ScoreManager : MonoBehaviour {
 
     // Score based on timer
     private float _timeElapsed;
-    private float _maxTime = 180;
+    private float _maxTime = 180f;
     private float _bonusScore = 1;
     private float _timerScore;
 
